@@ -1,0 +1,21 @@
+*** SPICE deck for cell R_Divider_sim{lay} from library Lab_1_DAC
+*** Created on Sat Sep 23, 2023 15:26:02
+*** Last revised on Sat Sep 23, 2023 15:33:12
+*** Written on Sat Sep 23, 2023 15:33:23 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Lab_1_DAC__R_Divider FROM CELL R_Divider{lay}
+.SUBCKT Lab_1_DAC__R_Divider bot In out
+Rresnwell_0 net_4 In 10k
+Rresnwell_1 net_4 out 10k
+Rresnwell_2 bot out 10k
+.ENDS Lab_1_DAC__R_Divider
+
+*** TOP LEVEL CELL: R_Divider_sim{lay}
+XR_Divide_0 0 vin vout Lab_1_DAC__R_Divider
+
+* Spice Code nodes in cell cell 'R_Divider_sim{lay}'
+vdd vin 0 DC 5V
+.op
+.END

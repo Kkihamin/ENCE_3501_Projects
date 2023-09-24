@@ -1,0 +1,104 @@
+# header information:
+HLab_1_DAC|9.07
+
+# Views:
+Vicon|ic
+Vlayout|lay
+Vschematic|sch
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D300.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell R_Divider;1{ic}
+CR_Divider;1{ic}||artwork|1695489464993|1695503134586|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NBox|art@2||1|-0.5|6|6||
+Nschematic:Bus_Pin|pin@0||-4|-0.5||||
+Nschematic:Wire_Pin|pin@1||-2|-0.5||||
+Nschematic:Bus_Pin|pin@2||1|-5.5|||R|
+Nschematic:Wire_Pin|pin@3||1|-3.5|||R|
+Nschematic:Bus_Pin|pin@4||1|4.5|||RRR|
+Nschematic:Wire_Pin|pin@5||1|2.5|||RRR|
+Aschematic:wire|net@0|||0|pin@1||-2|-0.5|pin@0||-4|-0.5
+Aschematic:wire|net@1|||900|pin@3||1|-3.5|pin@2||1|-5.5
+Aschematic:wire|net@2|||2700|pin@5||1|2.5|pin@4||1|4.5
+EIn||D5G2;|pin@0||U
+Ebot||D5G2;|pin@2||U
+Eout||D5G2;|pin@4||U
+X
+
+# Cell R_Divider;1{lay}
+CR_Divider;1{lay}||mocmos|1695503840214|1695504293164||DRC_last_good_drc_area_date()G1695504310760|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1695504310760
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||92|-52||||
+NMetal-1-Pin|pin@1||-94|23||||
+NMetal-1-Pin|pin@2||-93|-23||||
+NN-Well-Resistor|resnwell@0||-1|9|134.44|3|||SCHEM_resistance(D5G8;)S10k
+NN-Well-Resistor|resnwell@1||-1|-12|134.44|3|||SCHEM_resistance(D5G8;)S10k
+NN-Well-Resistor|resnwell@2||-1|-33|134.44|3|||SCHEM_resistance(D5G8;)S10k
+AMetal-1|net@0|||S2700|resnwell@0|left|-94|9|pin@1||-94|23
+AMetal-1|net@1|||S900|resnwell@2|right|92|-33|pin@0||92|-52
+AMetal-1|net@2|||S2700|resnwell@2|left|-93|-33|pin@2||-93|-23
+AMetal-1|net@3|||S2700|pin@2||-93|-23|resnwell@1|left|-93|-12
+AMetal-1|net@4|||S900|resnwell@0|right|91.5|9|resnwell@1|right|91.5|-12
+EIn||D5G2;|pin@1||U
+Ebot||D5G2;|pin@0||U
+Eout||D5G2;|pin@2||U
+X
+
+# Cell R_Divider;1{sch}
+CR_Divider;1{sch}||schematic|1695487161892|1695489477463|
+IR_Divider;1{ic}|R_Divide@2||28.5|10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@1||-10|0.5||||
+NOff-Page|conn@3||8.5|-10.5|||R|
+NOff-Page|conn@5||15.5|0.5||||
+NWire_Pin|pin@0||8.5|0.5||||
+NResistor|resnwell@0||-1.5|0.5||||3|ATTR_length(D5G0.25;X-1.5;)D175.44|ATTR_width(D5G0.5;X1.5;)D15.0|SCHEM_resistance(D5G1;)S10k
+NResistor|resnwell@1||4.5|0.5||||3|ATTR_length(D5G0.25;X-1.5;)D175.44|ATTR_width(D5G0.5;X1.5;)D15.0|SCHEM_resistance(D5G1;)S10k
+NResistor|resnwell@2||8.5|-3.5|||RRR|3|ATTR_length(D5G0.25;X-1.5;)D175.44|ATTR_width(D5G0.5;X1.5;)D15.0|SCHEM_resistance(D5G1;)S10k
+Awire|net@1|||1800|resnwell@0|b|0.5|0.5|resnwell@1|a|2.5|0.5
+Awire|net@2|||1800|resnwell@1|b|6.5|0.5|pin@0||8.5|0.5
+Awire|net@3|||900|pin@0||8.5|0.5|resnwell@2|a|8.5|-1.5
+Awire|net@4|||1800|conn@1|y|-8|0.5|resnwell@0|a|-3.5|0.5
+Awire|net@6|||2700|conn@3|y|8.5|-8.5|resnwell@2|b|8.5|-5.5
+Awire|net@8|||1800|pin@0||8.5|0.5|conn@5|a|13.5|0.5
+EIn||D5G2;|conn@1|a|U
+Ebot||D5G2;X1.5;|conn@3|a|U
+Eout||D5G2;|conn@5|y|U
+X
+
+# Cell R_Divider_sim;1{lay}
+CR_Divider_sim;1{lay}||mocmos|1695504362309|1695504792451||DRC_last_good_drc_area_date()G1695504796725|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1695504796725
+IR_Divider;1{lay}|R_Divide@0||-0.5|17|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Ngeneric:Invisible-Pin|pin@5||102|77.5|||||SIM_spice_card(D5G8;)S[vdd vin 0 DC 5V,.op]
+NMetal-1-Pin|pin@6||-94|51||||
+NMetal-1-Pin|pin@7||-106.5|-6||||
+NMetal-1-Pin|pin@8||92.5|-48||||
+NMetal-1-Pin|pin@9||-94.5|51||||
+NMetal-1-Pin|pin@10||92.5|-35||||
+AMetal-1|net@5|||S0|pin@6||-94|51|pin@9||-94.5|51
+AMetal-1|net@6|||S2700|R_Divide@0|In|-94.5|40|pin@9||-94.5|51
+AMetal-1|net@7|||S1800|pin@7||-106.5|-6|R_Divide@0|out|-93.5|-6
+AMetal-1|net@8|||S1800|R_Divide@0|bot|91.5|-35|pin@10||92.5|-35
+AMetal-1|net@9|||S2700|pin@8||92.5|-48|pin@10||92.5|-35
+Egnd||D5G2;|pin@8||U
+Evin||D5G2;|pin@6||U
+Evout||D5G2;|pin@7||U
+X
+
+# Cell R_Divider_sim;1{sch}
+CR_Divider_sim;1{sch}||schematic|1695488309682|1695503775182|
+IR_Divider;1{ic}|R_Divide@0||0.5|2.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-10|2||||
+NOff-Page|conn@1||1.5|10.5|||R|
+NGround|gnd@1||1.5|-6.5||||
+Ngeneric:Invisible-Pin|pin@2||9.5|5|||||SIM_spice_card(D5G1;)S[vdd vin 0 DC 5V,.op]
+Awire|net@5|||900|R_Divide@0|bot|1.5|-3|gnd@1||1.5|-4.5
+Awire|net@6|||2700|R_Divide@0|out|1.5|7|conn@1|a|1.5|8.5
+Awire|net@7|||0|R_Divide@0|In|-3.5|2|conn@0|y|-8|2
+Evin||D5G2;|conn@0|a|U
+Evout||D5G2;|conn@1|a|U
+X
