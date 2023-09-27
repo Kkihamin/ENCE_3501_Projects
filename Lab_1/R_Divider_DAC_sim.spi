@@ -1,0 +1,43 @@
+*** SPICE deck for cell R_Divider_DAC_sim{sch} from library Lab_1_DAC
+*** Created on Mon Sep 25, 2023 14:35:32
+*** Last revised on Tue Sep 26, 2023 10:47:54
+*** Written on Tue Sep 26, 2023 11:02:05 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Lab_1_DAC__R_Divider FROM CELL R_Divider{sch}
+.SUBCKT Lab_1_DAC__R_Divider bot In out
+Rresnwell_0 net_1 In 10k
+Rresnwell_1 out net_1 10k
+Rresnwell_2 bot out 10k
+.ENDS Lab_1_DAC__R_Divider
+
+*** SUBCIRCUIT Lab_1_DAC__R_Divider_5Bit_DAC FROM CELL R_Divider_5Bit_DAC{sch}
+.SUBCKT Lab_1_DAC__R_Divider_5Bit_DAC b0 b1 b2 b3 b4 vout
+** GLOBAL 0
+Rresnwell_0 0 net_19 10k
+XR_Divide_0 net_3 b4 vout Lab_1_DAC__R_Divider
+XR_Divide_1 net_9 b3 net_3 Lab_1_DAC__R_Divider
+XR_Divide_2 net_11 b2 net_9 Lab_1_DAC__R_Divider
+XR_Divide_3 net_17 b1 net_11 Lab_1_DAC__R_Divider
+XR_Divide_4 net_19 b0 net_17 Lab_1_DAC__R_Divider
+
+* Spice Code nodes in cell cell 'R_Divider_5Bit_DAC{sch}'
+*v4 b4 0
+*v3 b3 0
+*v2 b2 0
+*v1 b1 b0
+*vin b0 0 DC 5
+*.op
+.ENDS Lab_1_DAC__R_Divider_5Bit_DAC
+
+.global 0
+
+*** TOP LEVEL CELL: R_Divider_DAC_sim{sch}
+Ccap_0 0 vout 10p
+XR_Divide_0 vin vin 0 0 0 vout Lab_1_DAC__R_Divider_5Bit_DAC
+
+* Spice Code nodes in cell cell 'R_Divider_DAC_sim{sch}'
+vin vin 0 pulse(0V 2V 1u 1f 1f 3u 6u)
+.tran 0 2.4u 0 100p
+.END

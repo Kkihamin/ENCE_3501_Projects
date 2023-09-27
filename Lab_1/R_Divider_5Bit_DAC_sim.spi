@@ -1,0 +1,33 @@
+*** SPICE deck for cell R_Divider_5Bit_DAC_sim{lay} from library Lab_1_DAC
+*** Created on Tue Sep 26, 2023 11:24:19
+*** Last revised on Tue Sep 26, 2023 11:58:54
+*** Written on Tue Sep 26, 2023 11:59:10 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: R_Divider_5Bit_DAC_sim{lay}
+Rresnwell_0 net_0 net_4 10k
+Rresnwell_1 net_0 net_1 10k
+Rresnwell_2 net_42 net_1 10k
+Rresnwell_6 net_10 b3 10k
+Rresnwell_7 net_10 net_42 10k
+Rresnwell_8 net_49 net_42 10k
+Rresnwell_9 net_22 b2 10k
+Rresnwell_12 net_22 net_49 10k
+Rresnwell_13 net_33 net_49 10k
+Rresnwell_14 net_34 b1 10k
+Rresnwell_15 net_34 net_33 10k
+Rresnwell_16 net_36 net_33 10k
+Rresnwell_17 net_37 b0 10k
+Rresnwell_18 net_37 net_36 10k
+Rresnwell_19 net_39 net_36 10k
+Rresnwell_20 net_39 0 10k
+
+* Spice Code nodes in cell cell 'R_Divider_5Bit_DAC_sim{lay}'
+v4 b4 0
+v3 b3 0
+v2 b2 0
+v1 b1 b0
+vin b0 0 DC 5
+.op
+.END

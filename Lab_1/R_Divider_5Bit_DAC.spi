@@ -1,0 +1,32 @@
+*** SPICE deck for cell R_Divider_5Bit_DAC{sch} from library Lab_1_DAC
+*** Created on Sun Sep 24, 2023 11:37:23
+*** Last revised on Mon Sep 25, 2023 14:33:27
+*** Written on Mon Sep 25, 2023 15:22:48 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Lab_1_DAC__R_Divider FROM CELL R_Divider{sch}
+.SUBCKT Lab_1_DAC__R_Divider bot In out
+Rresnwell_0 net_1 In 10k
+Rresnwell_1 out net_1 10k
+Rresnwell_2 bot out 10k
+.ENDS Lab_1_DAC__R_Divider
+
+.global 0
+
+*** TOP LEVEL CELL: R_Divider_5Bit_DAC{sch}
+Rresnwell_0 0 net_19 10k
+XR_Divide_0 net_3 b4 vout Lab_1_DAC__R_Divider
+XR_Divide_1 net_9 b3 net_3 Lab_1_DAC__R_Divider
+XR_Divide_2 net_11 b2 net_9 Lab_1_DAC__R_Divider
+XR_Divide_3 net_17 b1 net_11 Lab_1_DAC__R_Divider
+XR_Divide_4 net_19 b0 net_17 Lab_1_DAC__R_Divider
+
+* Spice Code nodes in cell cell 'R_Divider_5Bit_DAC{sch}'
+v4 b4 0
+v3 b3 0
+v2 b2 0
+v1 b1 b0
+vin b0 0 DC 5
+.op
+.END
