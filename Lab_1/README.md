@@ -9,9 +9,18 @@
 
   1. This is the image of the 5 bit DAC used to calculate the output resistance below.
      ![output resistance for DAC](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/86b7a7d6-bf25-4649-9bf1-e70af1053feb)
+     
 Figure 1: The output resistance calculation of the 5 bit DAC
 
 The output resistance came out to be 10kohms.
+
+2. This is the image of the hand calculations of the delay if a 5 bit DAC has a 10pF capacitator load below.
+   
+![handcalculations for load and delay](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7edaf89c-9448-4648-b8bb-cf34e3ca3beb)
+
+Figure 2: The delay of the 5 bit DAC with 10pF capacitator load 
+
+Based on Figure 2 above I did 0.7*(10 X 10^3^)*(10 X 10^-12^) = 70ns
 
 
 
