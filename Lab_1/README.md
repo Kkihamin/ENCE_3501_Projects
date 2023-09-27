@@ -20,7 +20,14 @@ The output resistance came out to be 10kohms.
 
 Figure 2: The delay of the 5 bit DAC with 10pF capacitator load 
 
-Based on Figure 2 above I did 0.7*(10 X 10^3^)*(10 X 10^-12^) = 70ns
+Based on Figure 2 above I did 0.7*(10 X 10^3)*(10 X 10^-12) = 70ns
+
+3. Figure 3 below shows the delay I got on the simulation through LtSpice
+
+   <img width="1275" alt="LT Spice for capacitator 2v DAC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/07307801-9370-46ee-b051-5cb828728bc6">
+
+   Figure 3: Delay of 70ns shown in the simulation
+
 
 
 
