@@ -11,6 +11,8 @@
     3. [5-bit DAC with 10pF load](#5-bit DAC with 10pF load)
     4. [5-bit DAC with 10k load](#5-bit DAC with 10k load)
 5. [Layout](#paragraph3)
+    1. [R_Divider](#R_Divider)
+    2. [5-bit DAC](#5-bit DAC)
 ## Introduction <a name="introduction"></a>
 1. The objective of the DAC was to initially use the R_Divider schematic for a portion of the 5-bit DAC and then use that to implement the 5-bit DAC. The 5-bit DAC is simulated on LTSpice and created on ElectricVLSI to observe and simulate a simple DAC. This simple 5-bit DAC will be implemented in future labs.
 
@@ -84,6 +86,25 @@ The output resistance calculation of the 5-bit DAC when all the inputs are groun
 <img width="1273" alt="voltage simulation with resistor load for 2v" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0b14038e-b087-486c-9571-22cc6b066e03">
 
 **Figure 11:** Simulation of 5-bit DAC with 10k load at 2V
+
+## Layout <a name="Layout"></a>
+1. These section covers the Layouts of the R_Divider, and the entire 5-bit DAC with the load capacitator and resistor.
+
+### R_Divider <a name="R_Divider"></a>
+1. The layout of the R_Divider is shown in Figure 12 below.
+
+<img width="654" alt="layout of R_Divider" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/3fc8a1dc-7e10-49fc-b78a-a1e241e402a5">
+
+**Figure 12:** Layout of the R_Divider
+
+### 5-bit DAC <a name="5-bit DAC"></a>
+1. The layout of the 5-bit DAC is shown in Figure 13 below.
+
+<img width="630" alt="layout of DAC with load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/998af531-f6fd-4b7e-8d3d-0b55aa954b20">
+
+**Figure 13:** Layout of the 5-bit DAC
+
+
 
 
 
