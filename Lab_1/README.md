@@ -78,6 +78,17 @@ The output resistance calculation of the 5-bit DAC when all the inputs are groun
 ### 5-bit DAC with 10k load <a name="5-bit DAC with 10k load"></a>
 1. The schematic of the 5-bit DAC with 10k is shown in Figure 10 and the simulation values are shown in Figure 11 below.
 
+<img width="587" alt="DAC with resistor load schematic" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/bf8a64d0-050a-4543-b12d-4d25b9406eae">
+
+**Figure 10:** Schematic of 5-bit DAC with 10k load at 2V
+
+<img width="1273" alt="voltage simulation with resistor load for 2v" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0b14038e-b087-486c-9571-22cc6b066e03">
+
+**Figure 8:** Simulation of 5-bit DAC with 10k load at 2V
+
+
+
+
 
 
 
