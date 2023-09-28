@@ -13,6 +13,8 @@
 5. [Layout](#paragraph3)
     1. [R_Divider](#R_Divider)
     2. [5-bit DAC](#5-bit DAC)
+5. [Testing 5-bit DAC at different voltages](#paragraph4)
+    1. [5-bit DAC with load](#5-bit DAC with load)
 ## Introduction <a name="introduction"></a>
 1. The objective of the DAC was to initially use the R_Divider schematic for a portion of the 5-bit DAC and then use that to implement the 5-bit DAC. The 5-bit DAC is simulated on LTSpice and created on ElectricVLSI to observe and simulate a simple DAC. This simple 5-bit DAC will be implemented in future labs.
 
@@ -103,6 +105,29 @@ The output resistance calculation of the 5-bit DAC when all the inputs are groun
 <img width="630" alt="layout of DAC with load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/998af531-f6fd-4b7e-8d3d-0b55aa954b20">
 
 **Figure 13:** Layout of the 5-bit DAC
+
+## Testing 5-bit DAC at different voltages <a name="Testing 5-bit DAC at different voltages"></a>
+1. These show the Simulations of the 5-bit DAC with either a 10k resistor or 10pF capacitator at different voltages in the figures below.
+
+### 5-bit DAC with load <a name="5-bit DAC with load"></a>
+1. The simulation of DAC with load at 1v is shown in Figure 14, DAC with load at 3V is shown in Figure 15, and DAC with load at 4V is shown at FIgure 16 all shown below.
+
+<img width="1277" alt="simulation of DAC with load at 1V" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7ae887b9-24bc-46d0-a8f4-e73ee2caa266">
+
+**Figure 14:** Schematic of 5-bit DAC with load at 1V
+
+<img width="1267" alt="simulation with resistor load at 3V" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/37ef3853-1135-40c7-84bf-4ab6b26ae310">
+
+**Figure 15:** Schematic of 5-bit DAC with load at 3V
+
+<img width="1277" alt="DAC with load for 4V" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/eab3074e-6acd-44d7-8bdb-9cf94d7e3d9e">
+
+**Figure 16:** Schematic of 5-bit DAC with load at 4V
+
+
+
+
+
 
 
 
