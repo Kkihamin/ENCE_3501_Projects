@@ -94,7 +94,6 @@ Figure 15: Layout of the DAC
 The Width and length were determined by R = ρ/t * L/W = Rsquare * L/W 
 ## Verification and Analysis of ElectricVLSI
 The two Figures below shows the LVS and NCC analysis that shows there are no errors in the schematics and layouts.
-
 <img width="849" alt="error analysis" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/b56ae958-db7b-4390-8ff1-6fccf2a53c0f">
 
 Figure 16: LVS analysis on ElectricVLSI
