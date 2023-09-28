@@ -105,7 +105,6 @@ The output resistance calculation of the 5-bit DAC when all the inputs are groun
 <img width="630" alt="layout of DAC with load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/998af531-f6fd-4b7e-8d3d-0b55aa954b20">
 
 **Figure 13:** Layout of the 5-bit DAC
-
 ## Testing 5-bit DAC at different voltages <a name="Testing 5-bit DAC at different voltages"></a>
 1. These show the Simulations of the 5-bit DAC with either a 10k resistor or 10pF capacitator at different voltages in the figures below.
 
