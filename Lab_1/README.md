@@ -2,9 +2,9 @@
 # Table of contents
 1. [Introduction](#introduction)
 2. [HandCalculations](#paragraph1)
-    1. [Output Resistance](#subparagraph1)
-    2. [delay with the 10pF capacitance load](#subparagraph2)
-    3. [Load of 10k resistance DAC](#subparagraph3)
+    1. [Output Resistance](#Output Resistance)
+    2. [delay with the 10pF capacitance load](#delay with the 10pF capacitance load)
+    3. [Load of 10k resistance DAC](#Load of 10k resistance DAC)
 3. [Schematics](#paragraph2)
 4. [Layout](#paragraph3)
 ## This is the introduction <a name="introduction"></a>
