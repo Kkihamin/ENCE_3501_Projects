@@ -38,6 +38,12 @@ Based on Figure 2 above I did 0.7*(10 X 10^3)*(10 X 10^-12) = 70ns
 
    Figure 5: Handcalculation on 5 bit DAC with load 10k
 
+  
+
+
+   I noticed as the voltage I input increased the voltage output increased and the current decreased. For example, at 1v the current was 50uA but at 2V the current went down to 100uA of current.
+
+
    
 
 
