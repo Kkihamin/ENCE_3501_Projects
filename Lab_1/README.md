@@ -76,7 +76,6 @@ Figure 11: Schematic of 5 bit DAC as a icon and most of the inputs grounded
 Figure 12: Schematic of 5 bit DAC with a 10k load resistor
 
 All the other schematics I might of not put on here along with the simulations have all been verified.
-
 ## Layout
 
 
