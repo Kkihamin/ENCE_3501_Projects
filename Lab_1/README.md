@@ -64,14 +64,12 @@ The output resistance calculation of the 5-bit DAC when all the inputs are groun
 
 **Figure 7:** Simulation of 5-bit DAC on LTSpice
 
-
-
 ### 5-bit DAC with 10pF load <a name="5-bit DAC with 10pF load"></a>
 1. The schematic of the 5-bit DAC with 10pF is shown in Figure 8 and the simulation values are shown in Figure 9 below.
 
 <img width="679" alt="5 bit DAC with capacitator load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/5efc9efd-6646-48bf-9b7d-9ad72f37e386">
 
-**Figure 6:** Schematic of 5-bit DAC with 10pF load at 2V
+**Figure 8:** Schematic of 5-bit DAC with 10pF load at 2V
 
 
 
