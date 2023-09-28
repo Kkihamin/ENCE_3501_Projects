@@ -71,14 +71,13 @@ The output resistance calculation of the 5-bit DAC when all the inputs are groun
 
 **Figure 8:** Schematic of 5-bit DAC with 10pF load at 2V
 
+<img width="1277" alt="LT Spice for capacitator 2v DAC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/b89e5db1-9f2e-448e-8385-fcbcb59891bd">
 
+**Figure 8:** Simulation of 5-bit DAC with 10pF load at 2V
 
+### 5-bit DAC with 10k load <a name="5-bit DAC with 10k load"></a>
+1. The schematic of the 5-bit DAC with 10k is shown in Figure 10 and the simulation values are shown in Figure 11 below.
 
-### Output Resistance <a name="OutputResistance"></a>
-The output resistance calculation of the 5-bit DAC when all the inputs are grounded and the DAC does not have any capacitor or resistor load is 10kΩ and is shown in Figure 1 below.
-
-### Output Resistance <a name="OutputResistance"></a>
-The output resistance calculation of the 5-bit DAC when all the inputs are grounded and the DAC does not have any capacitor or resistor load is 10kΩ and is shown in Figure 1 below.
 
 
 
