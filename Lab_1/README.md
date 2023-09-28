@@ -74,7 +74,6 @@ Figure 11: Schematic of 5 bit DAC as a icon and most of the inputs grounded
 <img width="587" alt="DAC with resistor load schematic" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/979b7de8-fc04-4cd1-bf67-9b588f13f3ae">
 
 Figure 12: Schematic of 5 bit DAC with a 10k load resistor
-
 <img width="679" alt="5 bit DAC with capacitator load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/230a76ae-67f5-4c7c-a767-0d29a840e97f">
 
 Figure 13: Schematic of 5 bit DAC with a 10pF load capacitator
