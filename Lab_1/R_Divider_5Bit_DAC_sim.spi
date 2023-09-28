@@ -1,7 +1,7 @@
 *** SPICE deck for cell R_Divider_5Bit_DAC_sim{lay} from library Lab_1_DAC
 *** Created on Tue Sep 26, 2023 11:24:19
-*** Last revised on Tue Sep 26, 2023 11:58:54
-*** Written on Tue Sep 26, 2023 11:59:10 by Electric VLSI Design System, version 9.07
+*** Last revised on Wed Sep 27, 2023 14:11:20
+*** Written on Wed Sep 27, 2023 17:33:39 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 

@@ -155,7 +155,7 @@ Evout||D5G2;|conn@5|y|U
 X
 
 # Cell R_Divider_5Bit_DAC_sim;1{lay}
-CR_Divider_5Bit_DAC_sim;1{lay}||mocmos|1695749059049|1695751134642||DRC_last_good_drc_area_date()G1695751144162|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1695751144162
+CR_Divider_5Bit_DAC_sim;1{lay}||mocmos|1695749059049|1695845480135||DRC_last_good_drc_area_date()G1695751144162|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1695751144162
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NMetal-1-Pin|pin@0||-93|31.5||||
 NMetal-1-Pin|pin@1||-103|31.5||||
@@ -195,7 +195,7 @@ NMetal-1-Pin|pin@51||91.5|-22.5||||
 NMetal-1-Pin|pin@52||122|-220||||
 NMetal-1-Pin|pin@53||122|-291.5||||
 NMetal-1-Pin|pin@54||-96|-291.5||||
-Ngeneric:Invisible-Pin|pin@55||257.5|-89.5|||||SIM_spice_card(D5G4;)S[v4 b4 0,v3 b3 0,v2 b2 0,v1 b1 b0,vin b0 0 DC 5,.op]
+Ngeneric:Invisible-Pin|pin@55||257.5|-89.5|||||SIM_spice_card(D5G8;)S[v4 b4 0,v3 b3 0,v2 b2 0,v1 b1 b0,vin b0 0 DC 5,.op]
 NMetal-1-Pin|pin@56||-97|-366||||
 NMetal-1-Pin|pin@57||-96|-366||||
 NN-Well-Resistor|resnwell@0||0.5|64|134.44|3|||SCHEM_resistance(D5G4;)S10k
@@ -274,6 +274,40 @@ Eb1||D5G2;|pin@41||U
 Eb2||D5G2;|pin@36||U
 Eb3||D5G2;|pin@31||U
 Egnd||D5G2;|pin@56||U
+X
+
+# Cell R_Divider_DAC_Sim_2;1{sch}
+CR_Divider_DAC_Sim_2;1{sch}||schematic|1695828792204|1695860533612|
+IR_Divider_5Bit_DAC;1{ic}|R_Divide@0||-6|7.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-14|3||||
+NOff-Page|conn@1||6|13|||RR|
+NGround|gnd@0||-18.5|4.5||||
+NGround|gnd@1||2|2.5||||
+NWire_Pin|pin@0||-18.5|13||||
+NWire_Pin|pin@1||-18.5|10.5||||
+NWire_Pin|pin@2||-18.5|8||||
+NWire_Pin|pin@3||-11|5.5||||
+NWire_Pin|pin@4||-11|3||||
+Ngeneric:Invisible-Pin|pin@5||6.5|-4.5|||||SIM_spice_card(D5G2;)S[vin vin 0 pulse(0V 2V 1u 1f 1f 3u 6u),.tran 0 2.4u 0 100p]
+NWire_Pin|pin@7||2|13||||
+NResistor|resnwell@0||2|8|||RRR|3|ATTR_length(D5G0.25;X-1.5;)D175.44|ATTR_width(D5G0.5;X1.5;)D15.0|SCHEM_resistance(D5G1;)S10k
+Awire|net@0|||900|pin@3||-11|5.5|pin@4||-11|3
+Awire|net@1|||0|pin@4||-11|3|conn@0|y|-12|3
+Awire|net@6|||0|R_Divide@0|b2|-9.5|8|pin@2||-18.5|8
+Awire|net@7|||900|pin@0||-18.5|13|pin@1||-18.5|10.5
+Awire|net@8|||900|pin@1||-18.5|10.5|pin@2||-18.5|8
+Awire|net@9|||900|pin@2||-18.5|8|gnd@0||-18.5|6.5
+Awire|net@10|||0|R_Divide@0|b1|-9.5|5.5|pin@3||-11|5.5
+Awire|net@11|||0|R_Divide@0|b0|-9.5|3|pin@4||-11|3
+Awire|net@12|||0|R_Divide@0|b4|-9.5|13|pin@0||-18.5|13
+Awire|net@13|||0|R_Divide@0|b3|-9.5|10.5|pin@1||-18.5|10.5
+Awire|net@15|||900|resnwell@0|b|2|6|gnd@1||2|4.5
+Awire|net@16|||1800|R_Divide@0|vout|0.5|13|pin@7||2|13
+Awire|net@17|||1800|pin@7||2|13|conn@1|y|4|13
+Awire|net@18|||2700|resnwell@0|a|2|10|pin@7||2|13
+Evin||D5G2;|conn@0|a|U
+Evout||D5G2;|conn@1|a|U
 X
 
 # Cell R_Divider_DAC_sim;1{sch}
