@@ -37,9 +37,8 @@ Based on Figure 2 above I did 0.7*(10 X 10^3)*(10 X 10^-12) = 70ns
  ![handcalculations for load and delay](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7fd158c7-b60c-43ed-ace9-2b7e585935e1)
 
    Figure 5: Handcalculation on 5 bit DAC with load 10k
+<img width="1277" alt="simulation of DAC with load at 1V" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0d66f42a-bd12-4dab-a9c0-ab9bfe0fed7d">
    
-<img width="1277" alt="simulation of DAC with load at 1V" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7ea88f31-af2a-43ac-bd18-fa7bf3c94716">
-
   Figure 6: simulation of the DAC with 10k load at 1V
    I noticed as the voltage I input increased the voltage output increased and the current decreased. For example, at 1v the current was 50uA but at 2V the current went down to 100uA of current.
 
