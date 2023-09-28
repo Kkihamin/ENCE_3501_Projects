@@ -64,6 +64,7 @@ Figure 9: Schematic of R_Divider for the foundation of the 5 bit DAC and the sim
 
 <img width="637" alt="5 bit DAC without load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/95cdd3c1-e875-4387-a188-780ea7aaab6e">
 <img width="589" alt="DAC input voltage with 5 volts" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/b3a94c91-b53d-43de-9f29-127977ba16a5">
+
 Figure 10: Schematic of 5 bit DAC created from the icon of R_Divider and simulation values
 
 <img width="975" alt="circuit for DAC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/821ffb1f-142e-4330-91ae-102538e342ff">
@@ -73,6 +74,10 @@ Figure 11: Schematic of 5 bit DAC as a icon and most of the inputs grounded
 <img width="587" alt="DAC with resistor load schematic" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/979b7de8-fc04-4cd1-bf67-9b588f13f3ae">
 
 Figure 12: Schematic of 5 bit DAC with a 10k load resistor
+
+All the other schematics I might of not put on here along with the simulations have all been verified.
+
+## Layout
 
 
 
