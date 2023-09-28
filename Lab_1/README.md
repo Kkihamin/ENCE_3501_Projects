@@ -77,7 +77,6 @@ Figure 12: Schematic of 5 bit DAC with a 10k load resistor
 
 All the other schematics I might of not put on here along with the simulations have all been verified.
 ## Layout
-
 The following figures below are the layout of the R-divider and the DAC.
 
 <img width="654" alt="layout of R_Divider" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/725908bd-7fe1-4388-9f7f-240a2075d3dc">
