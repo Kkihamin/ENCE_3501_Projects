@@ -127,11 +127,15 @@ The output resistance calculation of the 5-bit DAC when all the inputs are groun
 
 
 
+<img width="849" alt="error analysis" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/dc0f284c-d931-4286-931d-0b1e349122e3">
+
+**Figure 17:** Schematic of 5-bit DAC with load at 4V
 
 
 
+<img width="850" alt="NCC analysis" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/caddfdcc-ab50-47df-9674-133a8808b8be">
 
-
+**Figure 18:** Schematic of 5-bit DAC with load at 4V
 
 
 
