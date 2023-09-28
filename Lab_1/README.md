@@ -1,12 +1,15 @@
 # Lab # 1 - DAC 
 # Table of contents
 1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+2. [HandCalculations](#paragraph1)
+    1. [Output Resistance](#subparagraph1)
+    2. [delay with the 10pF capacitance load](#subparagraph2)
+    3. [Load of 10k resistance DAC](#subparagraph3)
+3. [Schematics](#paragraph2)
+4. [Layout](#paragraph3)
 ## This is the introduction <a name="introduction"></a>
 Some introduction text, formatted in heading 2 style
-## Some paragraph <a name="paragraph1"></a>
+## HandCalculations <a name="paragraph1"></a>
 The first paragraph text
 ### Sub paragraph <a name="subparagraph1"></a>
 This is a sub paragraph, formatted in heading 3 style
