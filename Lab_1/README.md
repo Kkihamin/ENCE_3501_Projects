@@ -75,17 +75,22 @@ Figure 11: Schematic of 5 bit DAC as a icon and most of the inputs grounded
 
 Figure 12: Schematic of 5 bit DAC with a 10k load resistor
 
+<img width="679" alt="5 bit DAC with capacitator load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/230a76ae-67f5-4c7c-a767-0d29a840e97f">
+
+Figure 13: Schematic of 5 bit DAC with a 10pF load capacitator
+
+
 All the other schematics I might of not put on here along with the simulations have all been verified.
 ## Layout
 The following figures below are the layout of the R-divider and the DAC.
 
 <img width="654" alt="layout of R_Divider" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/725908bd-7fe1-4388-9f7f-240a2075d3dc">
 
-Figure 13: Layout of the R_Divider
+Figure 14: Layout of the R_Divider
 
 <img width="630" alt="layout of DAC without load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/701a0b48-77d1-4ca7-a1bd-9db5b8d87cc6">
 
-Figure 14: Layout of the DAC
+Figure 15: Layout of the DAC
 
 The Width and length were determined by R = ρ/t * L/W = Rsquare * L/W 
 
