@@ -53,6 +53,22 @@ Based on Figure 2 above I did 0.7*(10 X 10^3)*(10 X 10^-12) = 70ns
    I noticed as the voltage I input increased the voltage output increased and the current decreased. For example, at 1v the current was 50uA but at 2V the current went down to 100uA of current.
 
 
+
+## Schematics
+
+The following figures are the schematics from the foundation R_Divider to the 5 bit DAc to the 5 bit DAC with the resistor load or capacitator load
+
+<img width="847" alt="R_Divider schematic" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d654da31-8e92-4f9d-b741-09b07a56c27b">
+
+Figure 9: Schematic of R_Divider for the foundation of the 5 bit DAC
+
+<img width="637" alt="5 bit DAC without load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/95cdd3c1-e875-4387-a188-780ea7aaab6e">
+
+Figure 10: Schematic of 5 bit DAC created from the icon of R_Divider
+
+
+
+
    
 
 
