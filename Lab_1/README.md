@@ -87,6 +87,8 @@ Figure 13: Layout of the R_Divider
 
 Figure 14: Layout of the DAC
 
+The Width and length were determined by R = ρ/t * L/W = Rsquare * L/W 
+
 
 
 
