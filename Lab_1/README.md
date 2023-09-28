@@ -27,17 +27,18 @@ The output resistance calculation of the 5-bit DAC when all the inputs are groun
 **Figure 2:** Calculation of the 5-bit DAC for delay
 
 ### Load of 10k resistor DAC <a name="Load of 10k resistor DAC"></a>
-This is a sub paragraph, formatted in heading 3 style
+1. The effect of the load of 10k resistor on the DAC is calculated by doing the Thevenin theorem at the input voltage as 2V and applied ohm's law to get 100UA which is what I got for the simulation as well and it is shown in Figure 3 below.
+
+<img width="1277" alt="simulation of DAC with load at 1V" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0d66f42a-bd12-4dab-a9c0-ab9bfe0fed7d">
+
+**Figure 3:** Calculation of the 5-bit DAC with 10k load resistor
+
 ## Schematics <a name="Schematics"></a>
 The second paragraph text
 
 
 
-2. This is the image of the hand calculations of the delay if a 5 bit DAC has a 10pF capacitator load below.
-   
-![handcalculations for load and delay](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7edaf89c-9448-4648-b8bb-cf34e3ca3beb)
 
-Figure 2: The delay of the 5 bit DAC with 10pF capacitator load 
 
 Based on Figure 2 above I did 0.7*(10 X 10^3)*(10 X 10^-12) = 70ns
 
@@ -55,8 +56,7 @@ Based on Figure 2 above I did 0.7*(10 X 10^3)*(10 X 10^-12) = 70ns
 
  ![handcalculations for load and delay](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7fd158c7-b60c-43ed-ace9-2b7e585935e1)
 
-   Figure 5: Handcalculation on 5 bit DAC with load 10k
-<img width="1277" alt="simulation of DAC with load at 1V" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0d66f42a-bd12-4dab-a9c0-ab9bfe0fed7d">
+  
    
   Figure 6: Simulation of the DAC with 10k load at 1V
 
