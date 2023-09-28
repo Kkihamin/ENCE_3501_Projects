@@ -28,6 +28,21 @@ Based on Figure 2 above I did 0.7*(10 X 10^3)*(10 X 10^-12) = 70ns
 
    Figure 3: Delay of 70ns shown in the simulation
 
+4. The image below shows the simulation of the 5 bit DAC with a 10k load resistor at 2 volts.
+
+   <img width="1273" alt="voltage simulation with resistor load for 2v" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/b23fd1ee-3d8a-44ec-b2ba-4aada5a9ee1a">
+
+   Figure 4: Simulation on 5 bit DAC with 10k load at 2 volts
+
+
+   ![handcalculations for load and delay](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7fd158c7-b60c-43ed-ace9-2b7e585935e1)
+
+   Figure 5: Handcalculation on 5 bit DAC with load 10k
+
+   
+
+
+
 
 
 
