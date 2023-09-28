@@ -7,14 +7,18 @@
     3. [Load of 10k resistor DAC](#Load of 10k resistance DAC)
 3. [Schematics](#paragraph2)
 4. [Layout](#paragraph3)
-## This is the introduction <a name="introduction"></a>
-The objective of the DAC was to initially use the R_Divider schematic for a portion of the 5 bit DAC and then use that to implement the 5 bit DAC. The 5 bit DAC is simulated on LTSpice and created on ElectricVLSI to oberve and simulate a simple DAC. This simple 5 bit DAC will be implemented in future labs.
-## HandCalculations <a name="HandCalculations"></a>
-The HandCalculations needed were the output resistance the delay with the 10pF capacitator and the 10k load resistance DAC. The output resistance, delay with the 10pF load and the 10k load resistance is shown in the figures in the subheaders below.
-### Output Resistance <a name="Output Resistance"></a>
-The output resistance calculation of the 5 bit DAC when all the inputs are grounded and the DAC does not have any capacitator or resistor load is 10kΩ and is shown in Figure 1 below.
- ![output resistance for DAC](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/86b7a7d6-bf25-4649-9bf1-e70af1053feb)
- Figure 1: Calculation of the 5 bit DAC for output resistance
+## Introduction <a name="introduction"></a>
+1. The objective of the DAC was to initially use the R_Divider schematic for a portion of the 5-bit DAC and then use that to implement the 5-bit DAC. The 5-bit DAC is simulated on LTSpice and created on ElectricVLSI to observe and simulate a simple DAC. This simple 5-bit DAC will be implemented in future labs.
+
+## Hand Calculations <a name="HandCalculations"></a>
+The hand calculations needed were the output resistance, the delay with the 10pF capacitor, and the 10k load resistance DAC. The output resistance, delay with the 10pF load, and the 10k load resistance are shown in the figures in the subheaders below.
+
+### Output Resistance <a name="OutputResistance"></a>
+The output resistance calculation of the 5-bit DAC when all the inputs are grounded and the DAC does not have any capacitor or resistor load is 10kΩ and is shown in Figure 1 below.
+
+![Output Resistance for DAC](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/86b7a7d6-bf25-4649-9bf1-e70af1053feb)
+
+**Figure 1:** Calculation of the 5-bit DAC for output resistance
 ### delay with the 10pF capacitator load <a name="delay with the 10pF capacitator load"></a>
 This is a sub paragraph, formatted in heading 3 style
 ### Load of 10k resistor DAC <a name="Load of 10k resistor DAC"></a>
