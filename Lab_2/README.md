@@ -54,6 +54,8 @@
 
       Figure 7: Padframe with the DAC layout wired to the respective pins on the Padframe
 
+## Future Plans <a name="Future Plans"></a>
+   1. The next steps is to create a ESD protection for the DAC wired on the Padframe and this will be the goal of lab 3.
 
 
 
