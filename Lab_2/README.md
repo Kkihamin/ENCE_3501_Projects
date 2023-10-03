@@ -10,9 +10,9 @@
     2. [Padframe](#Padframe)
     3. [DAC with Padframe] (#DAC with Padframe)
  ## Introduction <a name="introduction"></a>
- 1. The objective of this lab was to create a Padframe for the DAC that I created from lab 1 with slight edits to the layout of the DAC because the DAC from lab 1 was not laid out in the correct way.
+    1. The objective of this lab was to create a Padframe for the DAC that I created from lab 1 with slight edits to the layout of the DAC because the DAC from lab 1 was not laid out in the correct way.
 ## Schematics <a name="Schematics"></a>
-1. This section covers the schematics of the DAC, padframe, and the DAC with the Padframe.
+   1. This section covers the schematics of the DAC, padframe, and the DAC with the Padframe.
 
    
 
