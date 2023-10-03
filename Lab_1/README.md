@@ -102,7 +102,8 @@ The output resistance calculation of the 5-bit DAC when all the inputs are groun
 ### 5-bit DAC <a name="5-bit DAC"></a>
 1. The layout of the 5-bit DAC is shown in Figure 13 below.
 
-<img width="630" alt="layout of DAC with load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/998af531-f6fd-4b7e-8d3d-0b55aa954b20">
+<img width="644" alt="DAC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/4fdf22f8-fb71-41d8-98e6-b63a412514ab">
+
 
 **Figure 13:** Layout of the 5-bit DAC
 ## Testing 5-bit DAC at different voltages <a name="Testing 5-bit DAC at different voltages"></a>
