@@ -2,10 +2,12 @@
 # Table of contents
 1. [Introduction](#introduction)
 2. [Schematics](#paragraph1)
+   
    1.[Pad frame](#Pad frame)
    2.[DAC](#DAC)
    3.[Padframe with DAC] (#Padframe with DAC)
-3. [Layout](#paragraph3)
+   
+4. [Layout](#paragraph3)
     1. [Pad](#Pad)
     2. [Padframe](#Padframe)
     3. [DAC] (#DAC)
@@ -53,7 +55,6 @@
       <img width="714" alt="Padframe with DAC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/4c6cd05b-28fb-4f45-854d-b16dcc84eb0f">
 
       Figure 7: Padframe with the DAC layout wired to the respective pins on the Padframe
-
 ## Future Plans <a name="Future Plans"></a>
    1. The next steps is to create a ESD protection for the DAC wired on the Padframe and this will be the goal of lab 3.
 
