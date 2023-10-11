@@ -1,0 +1,101 @@
+# header information:
+Htutorial_3|9.07
+
+# Views:
+Vlayout|lay
+Vschematic|sch
+
+# Technologies:
+Tbicmos|ScaleFORbicmos()D300.0
+Tmocmos|ScaleFORmocmos()D300.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell NMOS_IV;1{lay}
+CNMOS_IV;1{lay}||mocmos|1664522424835|1664523729835||DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1664523293205
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-N-Active-Con|contact@0||-4.5|7.5|5|||
+NMetal-1-N-Active-Con|contact@1||-4.5|-2.5|5|||
+NMetal-1-Polysilicon-1-Con|contact@2||-17.5|2.5||||
+NN-Transistor|nmos@0||-4.5|2.5|7||||SIM_spice_model(D5G2;)SNMOS
+NMetal-1-Pin|pin@2||-4.5|-29.5||||
+NMetal-1-Pin|pin@3||13|8||||
+NMetal-1-Pin|pin@4||-26|2.5||||
+NMetal-1-Pin|pin@5||13|-2.5||||
+NMetal-1-Pin|pin@6||13|7.5||||
+Ngeneric:Invisible-Pin|pin@7||-4.5|-36.5|||||SIM_spice_card(D5G1;)S[vs s 0 DC 0,vg g 0 DC 0,vd d 0 DC 0,.dc vd 0 5 1m vg 0 5 1,".include C:\\Goncalo\\DU\\Classes\\2022_28_Fall_Quarter\\ENCE_3501_VLSI\\Lectures\\Week_4_\\Tutorial_3\\C5_models.txt"]
+NMetal-1-P-Well-Con|substr@0||-4.5|-16.5|5|||
+AN-Active|net@0|||S2700|nmos@0|diff-top|-5|6.25|contact@0||-5|8
+AN-Active|net@1|||S900|nmos@0|diff-bottom|-4|-1.25|contact@1||-4|-3
+APolysilicon-1|net@2|||S1800|contact@2||-17.5|2.5|nmos@0|poly-left|-11.5|2.5
+AMetal-1|net@5|||S2700|pin@2||-4.5|-29.5|substr@0||-4.5|-16.5
+AMetal-1|net@6|||S0|pin@5||13|-2.5|contact@1||-4.5|-2.5
+AMetal-1|net@7|||S900|pin@3||13|8|pin@6||13|7.5
+AMetal-1|net@8||1|S1800|contact@0||-4.5|7.5|pin@6||13|7.5
+AMetal-1|net@9|||S1800|pin@4||-26|2.5|contact@2||-17.5|2.5
+Ed||D5G2;|pin@3||U
+Eg||D5G2;|pin@4||U
+Egnd||D5G2;|pin@2||U
+Es||D5G2;|pin@5||U
+X
+
+# Cell NMOS_IV;1{sch}
+CNMOS_IV;1{sch}||schematic|1664521997648|1664523758972|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-8.5|4||||
+NOff-Page|conn@1||-2|9.5|||RRR|
+NOff-Page|conn@2||-2|-1.5|||R|
+NGround|gnd@0||3.5|-1||||
+N4-Port-Transistor|nmos-4@0||-4|4|||R||ATTR_length(D5G0.5;Y-2;)D2.0|ATTR_width(D5G1;X1;Y-2;)D10.0|SIM_spice_model(D5G1;X-1;Y-3;)SNMOS
+NWire_Pin|pin@0||3.5|3||||
+Awire|net@0|||1800|nmos-4@0|b|-2|3|pin@0||3.5|3
+Awire|net@1|||900|pin@0||3.5|3|gnd@0||3.5|1
+Awire|net@2|||900|conn@1|y|-2|7.5|nmos-4@0|d|-2|6
+Awire|net@3|||1800|conn@0|y|-6.5|4|nmos-4@0|g|-5|4
+Awire|net@4|||900|nmos-4@0|s|-2|2|conn@2|y|-2|0.5
+Ed||D5G2;X1.5;|conn@1|a|U
+Eg||D5G2;X-3;|conn@0|y|U
+Es||D5G2;X1.5;|conn@2|a|U
+X
+
+# Cell PMOS_IV;1{lay}
+CPMOS_IV;1{lay}||mocmos|1664522434004|1664524369996||DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1664524311410
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-P-Active-Con|contact@0||-5.5|-3|5|||
+NMetal-1-P-Active-Con|contact@1||-5.5|7.5|5|||
+NMetal-1-Polysilicon-1-Con|contact@2||-19|2.5||||
+NMetal-1-Pin|pin@0||-26.5|2.5||||
+NMetal-1-Pin|pin@1||10.5|7.5||||
+NMetal-1-Pin|pin@2||10.5|-3||||
+NMetal-1-Pin|pin@4||-5.5|32.5||||
+Ngeneric:Invisible-Pin|pin@5||-5|-17|||||SIM_spice_card(D5G1;)S[vs s 0 DC 0,vw w 0 DC 0,vg g 0 DC 0,vd d 0 DC 0,.dc vd 0 -5 -1m vg 0 -5 -1,".include C:\\Goncalo\\DU\\Classes\\2022_28_Fall_Quarter\\ENCE_3501_VLSI\\Lectures\\Week_4_\\Tutorial_3\\C5_models.txt"]
+NP-Transistor|pmos@0||-5.5|2.5|7||||SIM_spice_model(D5G2;)SPMOS
+NMetal-1-N-Well-Con|well@1||-5.5|21.5|5|||
+AP-Active|net@0|||IJS900|contact@1||-5.5|8|pmos@0|diff-top|-5.5|6.25
+AP-Active|net@1|||IJS2700|contact@0||-6|-3|pmos@0|diff-bottom|-6|-1.25
+APolysilicon-1|net@2|||S1800|contact@2||-19|2.5|pmos@0|poly-left|-12.5|2.5
+AMetal-1|net@6|||S1800|pin@0||-26.5|2.5|contact@2||-19|2.5
+AMetal-1|net@7|||S2700|well@1||-5.5|21.5|pin@4||-5.5|32.5
+AMetal-1|net@8||1|S1800|contact@0||-5.5|-3|pin@2||10.5|-3
+AMetal-1|net@9||1|S1800|contact@1||-5.5|7.5|pin@1||10.5|7.5
+Ed||D5G2;|pin@2||U
+Eg||D5G2;|pin@0||U
+Es||D5G2;|pin@1||U
+Ew||D5G2;|pin@4||U
+X
+
+# Cell PMOS_IV;1{sch}
+CPMOS_IV;1{sch}||schematic|1664522254236|1664524328976|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-11|3||||
+NOff-Page|conn@1||-5|-3|||R|
+NOff-Page|conn@2||-5|9|||RRR|
+NOff-Page|conn@3||1|4||||
+N4-Port-Transistor|pmos-4@0||-7|3|||YR|2|ATTR_length(D5G0.5;Y-2;)D2.0|ATTR_width(D5G1;X1;Y-2;)D10.0|SIM_spice_model(D5G1;X-1;Y-3;)SPMOS
+Awire|net@0|||1800|conn@0|y|-9|3|pmos-4@0|g|-8|3
+Awire|net@2|||900|pmos-4@0|d|-5|1|conn@1|y|-5|-1
+Awire|net@4|||1800|pmos-4@0|b|-5|4|conn@3|a|-1|4
+Awire|net@5|||2700|pmos-4@0|s|-5|5|conn@2|y|-5|7
+Ed||D5G2;X1;|conn@1|a|U
+Eg||D5G2;X1;|conn@0|a|U
+Es||D5G2;X1;|conn@2|a|U
+Ew||D5G2;X1;|conn@3|a|U
+X
