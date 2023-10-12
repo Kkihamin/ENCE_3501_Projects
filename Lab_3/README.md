@@ -67,6 +67,14 @@
       <img width="795" alt="padframe_esd" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7f0d326c-e6d8-471c-a6dd-2509c97b13cf">
 
       Figure 6: Schematic of Padframe_ESD composed from Pad_ESD schematic
+## Layout <a name="Layout"></a>
+   1. This section contains the layouts of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
+## Nmos <a name="Nmos"></a>
+   1. Figure 7 below shows the layout of the Nmos with the gate, drain, source and the body completely routed.
+      <img width="595" alt="Nmos_IV" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/f20e30a5-3e69-4175-8034-7e0caa000cb1">
+
+      Figure 7: Layout of NMOS
+
       
 
 
