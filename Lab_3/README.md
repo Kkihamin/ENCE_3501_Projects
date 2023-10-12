@@ -105,6 +105,17 @@
       <img width="652" alt="padframe_esd" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/92172db6-b616-409c-a5d5-7eaa81413431">
 
       Figure 13: Layout of the Padframe_ESD
+## Final_IC_ESD <a name="Final_IC_ESD"></a>
+   1. Figure 14 below shows the layout of the Final Ic with ESD protection created from the Padframe_ESD layout and the Nmos layout routed together.
+      <img width="665" alt="final_ic_esd" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/28cfa61f-886c-4982-b88d-de5db5d603d9">
+
+      Figure 14: Layout of Final_IC_ESD
+## Challenges <a name="Challenges"></a>
+   1. The challenges of this lab was doing the Pad_ESD because the instructions I followed for the Pad_ESD was not the clearest to determine what needed to be routed and after some help I was able to successfully able to create the Pad_ESD and after the Pad_ESD was created the rest of the process was pretty straight forward and the hardest part was done.
+## Future Plans <a name="Future Plans"></a>
+   1. In the future if these IC's were actually being manufactured and fabricated the design and layout especially with the spacing would be very important but because this is not being manufactured and fabricated the spacing errors can be ignored.
+
+
 
 
 
