@@ -2,7 +2,6 @@
 # Table of contents
 1. [Introduction](#introduction)
 2. [Schematics](#paragraph1)
-   
    1.[Nmos](#Nmos)
    
    2.[Final_IC_Not_ESD](#Final_IC_Not_ESD)
@@ -15,10 +14,8 @@
 
    6.[Padframe_ESD] (#Padframe_ESD)
 
-   7.[Final_IC_ESD](#Final_IC_ESD)
-
-   
-4. [Layout](#paragraph3)
+   7.[Final_IC_ESD](#Final_IC_ESD) 
+3. [Layout](#paragraph3)
    1.[Nmos](#Nmos)
    
    2.[Final_IC_Not_ESD](#Final_IC_Not_ESD)
