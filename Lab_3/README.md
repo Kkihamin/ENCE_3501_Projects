@@ -38,6 +38,7 @@
    1. This section covers the schematics of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
 ## Nmos <a name="Nmos"></a>
    1. Figure 1 below shows the schematic of the Nmos that is a length of 2 and a width of 10 and shows the where the drain, gate, and source are located on the Nmos.
+      
       <img width="686" alt="Nmos_IV" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/1a478170-3ce0-4ecc-bbfa-7b62185e8155">
 
       Figure 1: Schematic of NMOS
