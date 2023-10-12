@@ -42,6 +42,19 @@
       <img width="686" alt="Nmos_IV" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/1a478170-3ce0-4ecc-bbfa-7b62185e8155">
 
       Figure 1: Schematic of NMOS
+## Final_IC_Not_ESD <a name="Final_IC_Not_ESD"></a>
+   1. Figure 2 below shows the schematic of the Final IC without the ESD protection and shows the Nmos schematic wired to the respective pins on the padframe in the layout and the Padframe schematic showing how many pins are on the padframe.
+      <img width="834" alt="final_ic_notesd" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d3a777aa-2540-45b4-bef9-3235d7247a91">
+
+      Figure 2: Schematic of Final_IC_Not_ESD composed of NMOS and Padframe schematics
+## pActive_nWell <a name="pActive_nWell"></a>
+   1. Figure 3 below shows the schematic of pActive_nWell as a diode circuit and labels which side is the pActive and which side is the nWell.
+      <img width="769" alt="pActive_nWell" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/2a4f4b39-0730-4501-b9db-d2140e1d734a">
+
+      Figure 3: Schematic of pActive_nWell
+
+
+
 
 
 
