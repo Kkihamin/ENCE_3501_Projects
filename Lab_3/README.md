@@ -79,6 +79,19 @@
       <img width="646" alt="final_ic_notESD" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/402b6601-9a7c-4e9b-a4c1-1b179bc82440">
 
       Figure 8: Layout of the Final_IC_Not_ESD
+## pActive_nWell <a name="pActive_nWell"></a>
+   1. Figure 9 below shows the layout of the pActive_nWell and the nWell is wired to a metal 1 connector on the top and the pActive on the bottom wired to a metal 1 connector as well.
+      <img width="443" alt="pActive_nWell" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/e29cdc0b-00fa-45aa-aaf0-8e7d7c8b9bfa">
+
+      Figure 9: Layout of the pActive_nWell
+## pWell_nActive <a name="pWell_nActive"></a>
+   1. Figure 10 below shows the layout of the pWell_nActive and the nActive is wired to a metal 1 connector on the top and the pWell on the bottom wired to a metal 1 connector as well.
+      <img width="435" alt="pWell_nActive" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/ab9c2790-6ee1-49e6-b7e2-c085321ca494">
+
+      Figure 10: Layout of the pWell_nActive
+      
+
+
 
 
       
