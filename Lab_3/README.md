@@ -52,6 +52,25 @@
       <img width="769" alt="pActive_nWell" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/2a4f4b39-0730-4501-b9db-d2140e1d734a">
 
       Figure 3: Schematic of pActive_nWell
+## pWell_nActive <a name="pWell_nActive"></a>
+   1. Figure 4 below shows the schematic of the pWell_nActive as a diode circuit and labels which side is the pWell and which side is the nActive.
+      <img width="824" alt="pWell_nActive" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/e0f4861a-1117-4705-82fe-16e33679fff5">
+
+      Figure 4: Schematic of pWell_nActive
+## Pad_ESD <a name="Pad_ESD"></a>
+   1. Figure 5 below shows the schematic of the Pad with ESD created with two diode circuits which are the pActive_nWell and the pWell_nActive wired with a VDD, inout, and gnd.
+      <img width="642" alt="pad_esd" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d6087bba-fe16-4b93-9497-cc85f577dc3e">
+
+      Figure 5: Schematic of Pad with ESD
+## Padframe_ESD <a name="Padframe_ESD"></a>
+   1. Figure 6 below shows the schematic of the padframe with ESD created from the Pad_ESD schematic connected with pin[1:8], vdd, and gnd.
+      <img width="795" alt="padframe_esd" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7f0d326c-e6d8-471c-a6dd-2509c97b13cf">
+
+      Figure 6: Schematic of Padframe_ESD composed from Pad_ESD schematic
+      
+
+
+
 
 
 
