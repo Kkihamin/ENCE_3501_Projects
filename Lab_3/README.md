@@ -74,6 +74,12 @@
       <img width="595" alt="Nmos_IV" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/f20e30a5-3e69-4175-8034-7e0caa000cb1">
 
       Figure 7: Layout of NMOS
+## Final_IC_Not_ESD <a name="Final_IC_Not_ESD"></a>
+   1. Figure 8 below shows the layout of the Final IC without the ESD and shows the NMOS layout in the middle of the padframe layout and the gate, drain, source, and body are wired to the different pins on the pads of the padframe.
+      <img width="646" alt="final_ic_notESD" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/402b6601-9a7c-4e9b-a4c1-1b179bc82440">
+
+      Figure 8: Layout of the Final_IC_Not_ESD
+
 
       
 
