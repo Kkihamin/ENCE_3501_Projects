@@ -32,7 +32,7 @@
    6.[Padframe_ESD] (#Padframe_ESD)
 
    7.[Final_IC_ESD](#Final_IC_ESD)
- ## Introduction <a name="introduction"></a>
+## Introduction <a name="introduction"></a>
     1. The objective of Lab 3 was to create a final ic with ESD protection using the pad and the padframe from tutorial 2 done in class and the Nmos from tutorial 3. The reason why ESD protection is necessary is because so that we can protect the electronic components and the IC from being damaged.
 ## Schematics <a name="Schematics"></a>
    1. This section covers the schematics of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
