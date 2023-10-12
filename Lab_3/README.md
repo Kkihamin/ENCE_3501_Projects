@@ -67,38 +67,44 @@
       <img width="795" alt="padframe_esd" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7f0d326c-e6d8-471c-a6dd-2509c97b13cf">
 
       Figure 6: Schematic of Padframe_ESD composed from Pad_ESD schematic
+## Final_IC_ESD <a name="Final_IC_ESD"></a>
+   1. Figure 7 below shows the schematic of the Final_IC with ESD protection created from the Nmos and padframe_ESD schematics.
+      <img width="853" alt="final_ic_esd" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d44e7131-e4fc-4e8b-9aab-92d6b6ba097b">
+
+      Figure 7: Schematic of Final_IC_ESD
+
 ## Layout <a name="Layout"></a>
    1. This section contains the layouts of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
 ## Nmos <a name="Nmos"></a>
-   1. Figure 7 below shows the layout of the Nmos with the gate, drain, source and the body completely routed.
+   1. Figure 8 below shows the layout of the Nmos with the gate, drain, source and the body completely routed.
       <img width="595" alt="Nmos_IV" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/f20e30a5-3e69-4175-8034-7e0caa000cb1">
 
-      Figure 7: Layout of NMOS
+      Figure 8: Layout of NMOS
 ## Final_IC_Not_ESD <a name="Final_IC_Not_ESD"></a>
-   1. Figure 8 below shows the layout of the Final IC without the ESD and shows the NMOS layout in the middle of the padframe layout and the gate, drain, source, and body are wired to the different pins on the pads of the padframe.
+   1. Figure 9 below shows the layout of the Final IC without the ESD and shows the NMOS layout in the middle of the padframe layout and the gate, drain, source, and body are wired to the different pins on the pads of the padframe.
       <img width="646" alt="final_ic_notESD" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/402b6601-9a7c-4e9b-a4c1-1b179bc82440">
 
-      Figure 8: Layout of the Final_IC_Not_ESD
+      Figure 9: Layout of the Final_IC_Not_ESD
 ## pActive_nWell <a name="pActive_nWell"></a>
-   1. Figure 9 below shows the layout of the pActive_nWell and the nWell is wired to a metal 1 pin on the top and the pActive on the bottom wired to a metal 1 pin as well.
+   1. Figure 10 below shows the layout of the pActive_nWell and the nWell is wired to a metal 1 pin on the top and the pActive on the bottom wired to a metal 1 pin as well.
       <img width="443" alt="pActive_nWell" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/e29cdc0b-00fa-45aa-aaf0-8e7d7c8b9bfa">
 
-      Figure 9: Layout of the pActive_nWell
+      Figure 10: Layout of the pActive_nWell
 ## pWell_nActive <a name="pWell_nActive"></a>
-   1. Figure 10 below shows the layout of the pWell_nActive and the nActive is wired to a metal 1 pin on the top and the pWell on the bottom wired to a metal 1 pin as well.
+   1. Figure 11 below shows the layout of the pWell_nActive and the nActive is wired to a metal 1 pin on the top and the pWell on the bottom wired to a metal 1 pin as well.
       <img width="435" alt="pWell_nActive" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/ab9c2790-6ee1-49e6-b7e2-c085321ca494">
 
-      Figure 10: Layout of the pWell_nActive
+      Figure 11: Layout of the pWell_nActive
 ## Pad_ESD <a name="Pad_ESD"></a>
-   1. Figure 11 below shows the layout of the Pad with ESD protection incorporated with a Pad layout and a common VDD and gnd created with two metal 1 connectors connected with a wire. Then a metal 1 to metal 2 contacts and a metal 1 pins to connect the pActive_nWell and pWell_nActive layouts with the pad layout and the vdd and gnd based on the instructions of the lab.
+   1. Figure 12 below shows the layout of the Pad with ESD protection incorporated with a Pad layout and a common VDD and gnd created with two metal 1 connectors connected with a wire. Then a metal 1 to metal 2 contacts and a metal 1 pins to connect the pActive_nWell and pWell_nActive layouts with the pad layout and the vdd and gnd based on the instructions of the lab.
       <img width="455" alt="pad_esd" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/e92e82b8-558e-42eb-a492-6f334236fbe8">
 
-      Figure 11: Layout of Pad_ESD
+      Figure 12: Layout of Pad_ESD
 ## Padframe_ESD <a name="Padframe_ESD"></a>
-   1. Figure 12 below shows the layout of the Padframe with ESD protection created with a array of Pad_ESD layouts copy and pasted and then the gnd and VDD all wired together with metal 1 pins
+   1. Figure 13 below shows the layout of the Padframe with ESD protection created with a array of Pad_ESD layouts copy and pasted and then the gnd and VDD all wired together with metal 1 pins
       <img width="652" alt="padframe_esd" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/92172db6-b616-409c-a5d5-7eaa81413431">
 
-      Figure 12: Layout of the Padframe_ESD
+      Figure 13: Layout of the Padframe_ESD
 
 
 
