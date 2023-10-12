@@ -89,6 +89,13 @@
       <img width="435" alt="pWell_nActive" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/ab9c2790-6ee1-49e6-b7e2-c085321ca494">
 
       Figure 10: Layout of the pWell_nActive
+## Pad_ESD <a name="Pad_ESD"></a>
+   1. Figure 11 below shows the layout of the Pad with ESD protection incorporated with a Pad layout and a common VDD and gnd created with two metal 1 connectors connected with a wire. Then a metal 1 to metal 2 contact and a metal 1 contact to connect the pActive_nWell and pWell_nActive layouts with the pad layout and the vdd and gnd based on the instructions of the lab.
+      <img width="455" alt="pad_esd" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/e92e82b8-558e-42eb-a492-6f334236fbe8">
+
+      Figure 11: Layout of Pad_ESD
+      
+
       
 
 
