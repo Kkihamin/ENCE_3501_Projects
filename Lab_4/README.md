@@ -23,14 +23,14 @@
 ## Inverter_1 <a name="Inverter_1"></a>
    1. Figure 1 below shows the schematic of the basic inverter CMOS with a PMOS with a length of 6 and a width of 12 and a NMOS with a length of 6 and a width of 6. This is created by just inserting a PMOS and a NMOS component and then wiring it together with exports, a ground, inputs and outputs, and modifying the widths and lengths according to the lab tutorial.
       
-     <img width="831" alt="Inverter_1" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/c007d1b6-05d9-4a7e-9892-5f21bac3a7f0">
+<img width="831" alt="Inverter_1" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/c007d1b6-05d9-4a7e-9892-5f21bac3a7f0">
 
 
       Figure 1: Schematic of CMOS of Inverter_1
 ## Inverter_2 <a name="Inverter_2"></a>
    1. Figure 2 below shows the schematic of a bigger inverter CMOS with a PMOS with a length of 6 and a width of 48 and a NMOS with a width of 6 and length of 24. This is created by just inserting a PMOS and a NMOS component and then wiring it together with exports, a ground, inputs and outputs, and modifying the widths and lengths according to the lab tutorial.
  
-       <img width="732" alt="Inverter_2" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/96d2aea0-6509-4965-8c30-4f03ef3e7286">
+ <img width="732" alt="Inverter_2" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/96d2aea0-6509-4965-8c30-4f03ef3e7286">
 
        Figure 2: Schematic of CMOS Inverter_2
 ## Combination of Inverter_1 and Inverter_2 without load <a name="Combination of Inverter_1 and Inverter_2 without load"></a>
