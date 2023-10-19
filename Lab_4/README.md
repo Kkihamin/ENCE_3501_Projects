@@ -36,33 +36,28 @@
 ## Combination of Inverter_1 and Inverter_2 without load <a name="Combination of Inverter_1 and Inverter_2 without load"></a>
    1. Figure 3 below shows the schematic of the Inverter_1 and Inverter_2 connected together as a circuit without a capacitator load. This is created by inserting the icons of Inverter_1 and Inverter_2 and using exports, ground, and labels according to the lab tutorial provided for this lab. Also, don't forget to set up the spice code with the C5 model and the code given in the tutorial.
 
-      <img width="774" alt="Schematic of both inverters without capacitor load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0594b8c9-3fed-4b2f-b54f-7fc2ae62d4eb">
+<img width="774" alt="Schematic of both inverters without capacitor load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0594b8c9-3fed-4b2f-b54f-7fc2ae62d4eb">
 
       Figure 3: Schematic of Inverter_1 and Inverter_2 without the load with spice code simulations
 ## Combination of Inverter_1 and Inverter_2 with load <a name="Combination of Inverter_1 and Inverter_2 with load"></a>
    1. Figure 4 below shows the schematic of the Inverter_1 and Inverter_2 connected together as a circuit with a capacitator load that is variable and changing depending which capacitator value is inputed. This is created by inserting the icons of Inverter_1 and Inverter_2 and using exports, ground, labels, and two capacitors for the label and set the value as {x} according to the lab tutorial provided for this lab. Additionally don't forget to set up the spice code with the C5 model and the spice code given in the tutorial since this is one of the things that will be simulated.
 
-      <img width="835" alt="Schematic of both inverters with loads" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/60a90eb6-813a-47e6-a5a5-8725aaaf5031">
+<img width="835" alt="Schematic of both inverters with loads" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/60a90eb6-813a-47e6-a5a5-8725aaaf5031">
 
       Figure 4: Schematic of Inverter_1 and Inverter_2 with capacitor loads and Spice code simulations
       
-
-
-
-
-
 ## Layout <a name="Layout"></a>
    1. This section contains the layouts of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
-## Nmos <a name="Nmos"></a>
-   1. Figure 8 below shows the layout of the Nmos with the gate, drain, source and the body completely routed.
-      <img width="595" alt="Nmos_IV" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/f20e30a5-3e69-4175-8034-7e0caa000cb1">
+## Inverter_1 <a name="Inverter_1"></a>
+   1. Figure 5 below shows the layout of Inverter_1 which is a PMOS combined with a NMOS as well as a N-actives, p-actives, N-Well, and a PWell. The one mistake I might of made that was one of the wires on the layout of Inverter_1 is not the same wire thickness and this is because I kept getting errors when I made it the same size and tried to move it around.
+<img width="598" alt="Layout of Inverter_1" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/2a7176f4-fe22-4c0b-ba50-f7ddab7e4a45">
 
-      Figure 8: Layout of NMOS
-## Final_IC_Not_ESD <a name="Final_IC_Not_ESD"></a>
-   1. Figure 9 below shows the layout of the Final IC without the ESD and shows the NMOS layout in the middle of the padframe layout and the gate, drain, source, and body are wired to the different pins on the pads of the padframe.
-      <img width="646" alt="final_ic_notESD" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/402b6601-9a7c-4e9b-a4c1-1b179bc82440">
+      Figure 5: Layout of Inverter_1
+## Inverter_2 <a name="Inverter_2"></a>
+   1. Figure 6 below shows the layout of the Inverter_2 which is a bigger layout than Inverter_1 and is created by inserting four of the Inverter_1 layouts over to this layout and then routing with N-acts, p-acts, p-well, n-well, and connectors to make the routing a easier process.
+<img width="834" alt="Inverter_2 layout" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/cb4c4b4b-909c-4376-957d-74788a045101">
 
-      Figure 9: Layout of the Final_IC_Not_ESD
+      Figure 6: Layout of Inverter_2
 ## pActive_nWell <a name="pActive_nWell"></a>
    1. Figure 10 below shows the layout of the pActive_nWell and the nWell is wired to a metal 1 pin on the top and the pActive on the bottom wired to a metal 1 pin as well.
       <img width="443" alt="pActive_nWell" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/e29cdc0b-00fa-45aa-aaf0-8e7d7c8b9bfa">
