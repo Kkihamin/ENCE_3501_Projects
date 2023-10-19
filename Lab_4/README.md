@@ -83,10 +83,9 @@
 
       Figure 10: Simulations of both Inverter_1 and Inverter_2 outputs and input at 100fF
 ## Challenges <a name="Challenges"></a>
-   1. The challenges of this lab was doing the Pad_ESD because the instructions I followed for the Pad_ESD was not the clearest to determine what needed to be routed and after some help I was able to successfully able to create the Pad_ESD and after the Pad_ESD was created the rest of the process was pretty straight forward and the hardest part was done.
+   1. The challenges of this lab was doing the routing for the second inverter because you had to be very careful with the spacing and how you orient your components or else you would get alot of errors and looking at the tutorial and trying to do Inverter_2 layout was very difficult but the rest of the lab was pretty straight forward.
 ## Future Plans <a name="Future Plans"></a>
-   1. In the future if these IC's were actually being manufactured and fabricated the design and layout especially with the spacing would be very important but because this is not being manufactured and fabricated the spacing errors can be ignored.
-
+   1. In the future there will be a lab on making a Full Adder I believe.
 
 
 
