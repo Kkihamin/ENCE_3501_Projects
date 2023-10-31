@@ -1,0 +1,16 @@
+*** SPICE deck for cell NAND_2{sch} from library Full_Adder
+*** Created on Fri Oct 20, 2023 10:12:46
+*** Last revised on Fri Oct 20, 2023 10:15:41
+*** Written on Fri Oct 20, 2023 10:16:09 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global vdd
+*** WARNING: no ground connection for N-transistor wells in cell 'NAND_2{sch}'
+
+*** TOP LEVEL CELL: NAND_2{sch}
+Mnmos_0 nmos_0_d nmos_0_g nmos_0_s N L=0.6U W=1.8U
+Mnmos_1 nmos_1_d nmos_1_g nmos_1_s N L=0.6U W=1.8U
+Mpmos_0 pmos_0_d pmos_0_g vdd vdd P L=0.6U W=1.8U
+Mpmos_1 pmos_1_d pmos_1_g vdd vdd P L=0.6U W=1.8U
+.END

@@ -1,0 +1,94 @@
+*** SPICE deck for cell Simulations{sch} from library Full_Adder
+*** Created on Fri Oct 20, 2023 14:07:07
+*** Last revised on Tue Oct 31, 2023 16:57:12
+*** Written on Tue Oct 31, 2023 16:57:25 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Full_Adder__NAND_2 FROM CELL NAND_2{sch}
+.SUBCKT Full_Adder__NAND_2 A B Y
+** GLOBAL 0
+** GLOBAL vdd
+Mnmos_0 Y A net_6 0 NMOS L=0.6U W=3U
+Mnmos_1 net_6 B 0 0 NMOS L=0.6U W=3U
+Mpmos_0 Y A vdd vdd PMOS L=0.6U W=3U
+Mpmos_1 Y B vdd vdd PMOS L=0.6U W=3U
+.ENDS Full_Adder__NAND_2
+
+*** SUBCIRCUIT Full_Adder__NOT FROM CELL NOT{sch}
+.SUBCKT Full_Adder__NOT A Y
+** GLOBAL 0
+** GLOBAL vdd
+Mnmos_0 Y A 0 0 NMOS L=0.6U W=1.8U
+Mpmos_0 Y A vdd vdd PMOS L=0.6U W=1.8U
+.ENDS Full_Adder__NOT
+
+*** SUBCIRCUIT Full_Adder__XOR_2 FROM CELL XOR_2{sch}
+.SUBCKT Full_Adder__XOR_2 A B Y
+** GLOBAL 0
+** GLOBAL vdd
+Mnmos_4 Y A net_43 0 NMOS L=0.6U W=1.8U
+Mnmos_5 Y notB_out net_43 0 NMOS L=0.6U W=1.8U
+Mnmos_6 net_43 B 0 0 NMOS L=0.6U W=1.8U
+Mnmos_7 net_43 notA_out 0 0 NMOS L=0.6U W=1.8U
+Mnmos_8 notA_out A 0 0 NMOS L=0.6U W=1.8U
+Mnmos_9 notB_out B 0 0 NMOS L=0.6U W=1.8U
+Mpmos_0 net_1 A vdd vdd PMOS L=0.6U W=1.8U
+Mpmos_2 net_0 B vdd vdd PMOS L=0.6U W=1.8U
+Mpmos_3 Y notA_out net_0 vdd PMOS L=0.6U W=1.8U
+Mpmos_4 Y notB_out net_1 vdd PMOS L=0.6U W=1.8U
+Mpmos_5 notA_out A vdd vdd PMOS L=0.6U W=1.8U
+Mpmos_6 notB_out B vdd vdd PMOS L=0.6U W=1.8U
+.ENDS Full_Adder__XOR_2
+
+*** SUBCIRCUIT Full_Adder__full_adder FROM CELL full_adder{sch}
+.SUBCKT Full_Adder__full_adder A B Cin Cout S
+** GLOBAL 0
+** GLOBAL vdd
+XNAND_2_0 Cin net_12 net_22 Full_Adder__NAND_2
+XNAND_2_1 net_22 net_23 Cout Full_Adder__NAND_2
+XNAND_2_2 A B net_23 Full_Adder__NAND_2
+XXOR_2_0 Cin net_12 S Full_Adder__XOR_2
+XXOR_2_1 A B net_12 Full_Adder__XOR_2
+.ENDS Full_Adder__full_adder
+
+.global 0 vdd
+
+*** TOP LEVEL CELL: Simulations{sch}
+XNAND_2_0 d_in vdd nand_d_out Full_Adder__NAND_2
+XNAND_2_1 va vb vout_nand Full_Adder__NAND_2
+XNOT_0 d_in not_d_out Full_Adder__NOT
+XXOR_2_0 d_in vdd xor_d_out Full_Adder__XOR_2
+XXOR_2_1 va vb vout_xor Full_Adder__XOR_2
+Xfull_add_0 a b cin cout s Full_Adder__full_adder
+
+* Spice Code nodes in cell cell 'Simulations{sch}'
+vdd vdd 0 dc 5
+vin d_in 0 pulse(0v 5v 10n 1n 1n 40n 40n)
+.tran 0 40n
+.include C5_models.txt
+*vdd vdd 0 dc 5
+*va va 0 pulse(0v 5v 0n 1n 1n 10n 20n)
+*vb vb 0 pulse(0v 5v 5n 1n 1n 10n 20n)
+*.tran 0 40n
+*.include C5_models.txt
+*vdd vdd 0 dc 5
+*vin d_in 0 pulse(0v 5v 10n 1n 1n 40n 40n)
+*.tran 0 40n
+*.include C5_models.txt
+*vdd vdd 0 dc 5
+*vin d_in 0 pulse(0v 5v 10n 1n 1n 40n 40n)
+*.tran 0 40n
+*.include C5_models.txt
+*vdd vdd 0 dc 5
+*va va 0 pulse(0v 5v 0n 1n 1n 10n 20n)
+*vb vb 0 pulse(0v 5v 5n 1n 1n 10n 20n)
+*.tran 0 40n
+*.include C5_models.txt
+*vdd vdd 0 dc 5
+*va a 0 pulse(0v 5v 0n 1n 1n 10n 20n)
+*vb b 0 pulse(0v 5v 5n 1n 1n 10n 20n)
+*vcin cin 0 pulse(0v 5v 2n 1n 1n 10n 20n)
+*.tran 0 60n
+*.include C5_models.txt
+.END

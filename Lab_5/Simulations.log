@@ -1,0 +1,41 @@
+Circuit: *** SPICE deck for cell Simulations{sch} from library Full_Adder
+
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for vin.  Increasing period to 4.2e-08
+WARNING: Node VA is floating.
+WARNING: Node VB is floating.
+WARNING: Node CIN is floating.
+WARNING: Node A is floating.
+WARNING: Node B is floating.
+
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Oct 31 16:57:26 2023
+Total elapsed time: 0.233 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2195
+traniter = 2158
+tranpoints = 1055
+accept = 1051
+rejected = 4
+matrix size = 44
+fillins = 34
+solver = Normal
+Avg thread counts: 5.9/3.7/3.6/2.3
+Matrix Compiler1: 8.60 KB object code size  1.4/0.8/[0.5]
+Matrix Compiler2: 6.24 KB object code size  0.5/0.9/[0.5]
+
