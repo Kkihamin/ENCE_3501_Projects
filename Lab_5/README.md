@@ -3,27 +3,29 @@
 1. [Introduction](#introduction)
 2. [Schematics](#paragraph1)
    
-   1.[Inverter_1](#Inverter_1)
+   1.[NAND](#NAND)
    
-   2.[Inverter_2](#Inverter_2)
+   2.[NOT](#NOT)
    
-   3.[Combination of Inverter_1 and Inverter_2 without load] (#Combination of Inverter_1 and Inverter_2 without load)
+   3.[XOR] (#XOR)
 
-   4.[Combination of Inverter_1 and Inverter_2 with load] (#Combination of Inverter_1 and Inverter_2 with load) 
+   4.[Full Adder] (#Full Adder) 
 4. [Layout](#paragraph3)
 
 
-   1.[Inverter_1](#Inverter_1)
+   1.[NAND](#NAND)
    
-   2.[Inverter_2](#Inverter_2)
+   2.[NOT](#NOT)
+   3.[XOR](#XOR)
+   4.[Full Adder](#Full Adder)
 4. [Simulations](#paragraph3)
-
-
-   1.[Inverter_1 and Inverter_2 without load](#Inverter_1 and Inverter_2 without load)
    
-   2.[Inverter_1 and Inverter_2 with load](#Inverter_1 and Inverter_2 with load)
+   1.[NAND](#NAND)
+   2.[NOT](#NOT)
+   3.[XOR](#XOR)
+   4.[Full Adder](#Full Adder)
 ## Introduction <a name="introduction"></a>
-    1. The objective of Lab 4 was to create two inverters inverter_1 which is just a basic inverter in CMOS and a inverter_2 which is a bigger inverter CMOS using inverter_1 and simulationing it on LT Spice together without the load and with the load to explore the behavior of the circuit.
+    1. The objective of Lab 5 was to create a NAND, NOT, and XOR schematic and layout and use that to create a Full Adder schematic and layout using all three gates and routing them together as well as simulating the timings and truth tables of the different gates.
 ## Schematics <a name="Schematics"></a>
    1. This section covers the schematics of the Inverter_1, Inverter_2, combination of Inverter_1 and Inverter_2 without a load, combination of Inverter_1 and Inverter_2 with loads in the sub sections provided below.
 ## Inverter_1 <a name="Inverter_1"></a>
