@@ -41,12 +41,15 @@
 
 
       Figure 1: Schematic of NAND Gate
-## Inverter_2 <a name="Inverter_2"></a>
-   1. Figure 2 below shows the schematic of a bigger inverter CMOS with a PMOS with a length of 6 and a width of 48 and a NMOS with a width of 6 and length of 24. This is created by just inserting a PMOS and a NMOS component and then wiring it together with exports, a ground, inputs and outputs, and modifying the widths and lengths according to the lab tutorial.
- 
- <img width="732" alt="Inverter_2" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/96d2aea0-6509-4965-8c30-4f03ef3e7286">
+## NOT <a name="NOT"></a>
+   1. Figure 2 below shows the schematic of a Not gate or a Inverter by using a PMOS with a width of 6 and a length of 2 and a NMOS with a width of 6 and a length of 2 in a different configuration regarding the position and having A as a input and Y as a output.
 
-       Figure 2: Schematic of CMOS Inverter_2
+   <img width="750" alt="NOT" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/9506a191-af6c-442f-9d07-af186cc2272c">
+
+ 
+ 
+
+       Figure 2: Schematic of NOT/Inverter Gate
 ## Combination of Inverter_1 and Inverter_2 without load <a name="Combination of Inverter_1 and Inverter_2 without load"></a>
    1. Figure 3 below shows the schematic of the Inverter_1 and Inverter_2 connected together as a circuit without a capacitator load. This is created by inserting the icons of Inverter_1 and Inverter_2 and using exports, ground, and labels according to the lab tutorial provided for this lab. Also, don't forget to set up the spice code with the C5 model and the code given in the tutorial.
 
