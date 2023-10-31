@@ -34,12 +34,13 @@
 ## Schematics <a name="Schematics"></a>
    1. This section covers the schematics of the NAND, NOT, XOR, and Full Adder in the sub sections provided below.
 ## NAND <a name="NAND"></a>
-   1. Figure 1 below shows the schematic of the basic inverter CMOS with a PMOS with a length of 6 and a width of 12 and a NMOS with a length of 6 and a width of 6. This is created by just inserting a PMOS and a NMOS component and then wiring it together with exports, a ground, inputs and outputs, and modifying the widths and lengths according to the lab tutorial.
+   1. Figure 1 below shows the schematic of a two input NAND gate with two PMOS transistors with both a width of 6 and a length of 2 and two NMOS transistors with a width of 6 and length of two using A and B as inputs and Y as the output and the reason why the NMOS looks different is because the NMOS were shifted left to Right instead of the regular configuration.
       
-<img width="831" alt="Inverter_1" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/c007d1b6-05d9-4a7e-9892-5f21bac3a7f0">
+<img width="834" alt="NAND" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/33e8a564-6e95-4f17-b120-ca0a16549b8f">
 
 
-      Figure 1: Schematic of CMOS of Inverter_1
+
+      Figure 1: Schematic of NAND Gate
 ## Inverter_2 <a name="Inverter_2"></a>
    1. Figure 2 below shows the schematic of a bigger inverter CMOS with a PMOS with a length of 6 and a width of 48 and a NMOS with a width of 6 and length of 24. This is created by just inserting a PMOS and a NMOS component and then wiring it together with exports, a ground, inputs and outputs, and modifying the widths and lengths according to the lab tutorial.
  
