@@ -50,7 +50,7 @@
  
 
        Figure 2: Schematic of NOT/Inverter Gate
-## Combination of Inverter_1 and Inverter_2 without load <a name="Combination of Inverter_1 and Inverter_2 without load"></a>
+## XOR <a name="XOR"></a>
    1. Figure 3 below shows the schematic of the Inverter_1 and Inverter_2 connected together as a circuit without a capacitator load. This is created by inserting the icons of Inverter_1 and Inverter_2 and using exports, ground, and labels according to the lab tutorial provided for this lab. Also, don't forget to set up the spice code with the C5 model and the code given in the tutorial.
 
 <img width="774" alt="Schematic of both inverters without capacitor load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0594b8c9-3fed-4b2f-b54f-7fc2ae62d4eb">
