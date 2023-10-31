@@ -21,8 +21,11 @@
 4. [Simulations](#paragraph3)
    
    1.[NAND](#NAND)
+   
    2.[NOT](#NOT)
+   
    3.[XOR](#XOR)
+   
    4.[Full Adder](#Full Adder)
 ## Introduction <a name="introduction"></a>
     1. The objective of Lab 5 was to create a NAND, NOT, and XOR schematic and layout and use that to create a Full Adder schematic and layout using all three gates and routing them together as well as simulating the timings and truth tables of the different gates.
