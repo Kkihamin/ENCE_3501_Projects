@@ -16,7 +16,9 @@
    1.[NAND](#NAND)
    
    2.[NOT](#NOT)
+   
    3.[XOR](#XOR)
+   
    4.[Full Adder](#Full Adder)
 4. [Simulations](#paragraph3)
    
