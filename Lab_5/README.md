@@ -32,8 +32,8 @@
 ## Introduction <a name="introduction"></a>
     1. The objective of Lab 5 was to create a NAND, NOT, and XOR schematic and layout and use that to create a Full Adder schematic and layout using all three gates and routing them together as well as simulating the timings and truth tables of the different gates.
 ## Schematics <a name="Schematics"></a>
-   1. This section covers the schematics of the Inverter_1, Inverter_2, combination of Inverter_1 and Inverter_2 without a load, combination of Inverter_1 and Inverter_2 with loads in the sub sections provided below.
-## Inverter_1 <a name="Inverter_1"></a>
+   1. This section covers the schematics of the NAND, NOT, XOR, and Full Adder in the sub sections provided below.
+## NAND <a name="NAND"></a>
    1. Figure 1 below shows the schematic of the basic inverter CMOS with a PMOS with a length of 6 and a width of 12 and a NMOS with a length of 6 and a width of 6. This is created by just inserting a PMOS and a NMOS component and then wiring it together with exports, a ground, inputs and outputs, and modifying the widths and lengths according to the lab tutorial.
       
 <img width="831" alt="Inverter_1" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/c007d1b6-05d9-4a7e-9892-5f21bac3a7f0">
