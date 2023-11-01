@@ -140,6 +140,7 @@
 <img width="837" alt="DRC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d5ca510a-3476-4cc1-94be-c01a4ee4f1f6">
 
 Figure 15: DRC of Schematic and Layout of All gates
+
 <img width="799" alt="NCC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/b7700f92-f3db-469f-abb7-50a81afdfa3c">
 
 Figure 16: NCC of Schematic and Layout of Lab
