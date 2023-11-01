@@ -112,7 +112,7 @@
       Figure 10: Simulation of NAND for Input d_in Versuses nand_d_out
 <img width="1274" alt="NAND Truth tables simulations" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/789ab792-5f65-42b1-85ac-58563ab6f0d4">
 
-   Figure 11: Graph of NAND at 00, 01, 10, and 11
+   Figure 11: Simulation of NAND at 00, 01, 10, and 11
 ## NOT <a name="NOT"></a>
    1. Figure 12 below shows the input d_in versuses not_d_out and kind of creates a x shape but as you mess with different inputs it tends to flatten out.
       
@@ -120,12 +120,20 @@
 
 
       Figure 12: Simulations of NOT for Input d_in versuses not_d_out
-<img width="1264" alt="Schematic of two inverters wih capacitator load for Vout2 with Vin" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/666152c1-0729-4f4c-8741-16881ef880cc">
+## XOR <a name="XOR"></a>
+   1. Figure 13 below shows the simulation graph of the input d_in versuses xor_d_out which is the output of the XOR. Figure 13 shows that the input and outputs are kind of reversed to create a x shape but as you mess with the inputs they will flatten and stabilize. Figure 14 below shows the simulation graph of the truth table of the NAND and what the graph would look like at 00, 01, 10, and 11.
+      
+<img width="1271" alt="XOR transmission delay simulations" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/2b6eb416-c670-4a0f-9cb5-9ca14db7c46b">
 
-      Figure 9: Simulations of Inverter_1 output and input at 1pF, 10pF, and 100pF
-<img width="1266" alt="Schematic of two inverters with capacitator load at 1f 10f and 100f" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/f9e4c940-7633-400a-ac16-6ba48a74ed00">
 
-      Figure 10: Simulations of both Inverter_1 and Inverter_2 outputs and input at 100fF
+
+      Figure 13: Simulations of XOR for Input d_in versuses xor_d_out
+<img width="1270" alt="XOR truth table simulations" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0407b5ac-0f55-4111-9c89-bd5b73d216cc">
+
+      Figure 14: Simulation of XOR at 00, 01, 10, 11
+
+
+
 ## Challenges <a name="Challenges"></a>
    1. The challenges of this lab was doing the routing for the second inverter because you had to be very careful with the spacing and how you orient your components or else you would get alot of errors and looking at the tutorial and trying to do Inverter_2 layout was very difficult but the rest of the lab was pretty straight forward.
 ## Future Plans <a name="Future Plans"></a>
