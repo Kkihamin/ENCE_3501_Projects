@@ -78,10 +78,20 @@
 
       Figure 5: Layout of NAND
 ## NOT <a name="NOT"></a>
-   1. Figure 6 below shows the layout of the Inverter_2 which is a bigger layout than Inverter_1 and is created by inserting four of the Inverter_1 layouts over to this layout and then routing with N-acts, p-acts, p-well, n-well, and connectors to make the routing a easier process.
-<img width="834" alt="Inverter_2 layout" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/cb4c4b4b-909c-4376-957d-74788a045101">
+   1. Figure 7 below shows the layout of the NOT which is a PMOS transistor with two p-active one on each end and a NMOS transistor with two n-active one on each end and the PMOS is connected to the n-well which is vdd and the NMOS connected to the p-well which is gnd and the input A is connected to the PMOS and NMOS and the output Y connecting the PMOS and NMOS and this should be very similar to the tutorial in the layout.
 
-      Figure 6: Layout of Inverter_2
+<img width="527" alt="NOT" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/02929ed5-4e9a-450c-88bc-5ee50be7c3e9">
+
+
+      Figure 7: Layout of NOT GATE
+## XOR <a name="XOR"></a>
+   1. Figure 3 above shows the handcalculations and work to get to the layout of the XOR using Euler path and Stick diagrams and Figure 8 below shows 4 PMOS transistors in the middle with p-actives between two PMOS transistors and P-actives on the ends of the PMOS transistors and 4 NMOS transistors also with n-actives between two NMOS transistors and n-actives on the ends of the NMOS transistors. To the left of the middle part of the layout is a Not gate layout for input A and to the right of the middle part of the layout is a Not gate layout for input B. The NMOS transistors are connected to the ground which is the p-well and the PMOS transistors are connected to vdd which is the n-well. The layout of the XOR should be very similar to the layout in the tutorial.
+      
+<img width="809" alt="XOR" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/bf87a26b-0f5f-4259-a365-f8a1e96c7d17">
+
+
+
+      Figure 8: Layout of XOR GATE
 ## Simulations <a name="Simulations"></a>
    1. This section contains the layouts of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
 ## Inverter_1 and Inverter_2 without load <a name="Inverter_1 and Inverter_2 without load"></a>
