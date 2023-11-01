@@ -102,17 +102,24 @@
 
       Figure 9: Layout of Full Adder
 ## Simulations <a name="Simulations"></a>
-   1. This section contains the layouts of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
+   1. This section contains the simulations of the NAND for the delays and the truth table, Not for the delay and the truth table, XOR in delay and truth table, and Full adder in truth table all shown in sub sections below.
 ## NAND <a name="NAND"></a>
-   1. Figure 7 below shows the simulation graph of the inputs and the both outputs of Inverter_1 and Inverter_2 and based on the figure below I could observe that while the voltage input is linear but the two outputs of Inverter_1 and Inverter_2 are not linear and are kind of sideways x^3 graph.
-<img width="1268" alt="Schematic of two inverters without the load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/544b90d8-67e6-460f-b482-692fb5428bf7">
+   1. Figure 10 below shows the simulation graph of the input d_in versuses nand_d_out which is the output of the NAND. Figure 10 shows that the input and outputs are kind of reversed to create a x shape but as you mess with the inputs they will flatten and stabilize. Figure 11 below shows the simulation graph of the truth table of the NAND and what the graph would look like at 00, 01, 10, and 11.
+      
+<img width="1266" alt="NAND simulations 1" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/eddabe88-b190-4b7b-bd02-dac98f7cc7a3">
 
-      Figure 7: Simulation of Inverter_1 and Inverter_2 with a linear input
-## Inverter_1 and Inverter_2 with load <a name="Inverter_1 and Inverter_2 with load"></a>
-   1. Figure 8 and Figure 9 below shows the simulations of Inverter_1 and Inverter_2 with a Capacitor load of 1pF, 10pF, and 100pF and as you can see from the Figures below the outputs are going all over the place and is not stable at all. In Figure 10 below you can see the simulations of Inverter_1 and Inverter_2 with a Capacitor load of 100fF and the outputs of the Inverter_1 and Inverter_2 is less unstable and you see that it curves and starts to stablize.
-<img width="1269" alt="Schematic of two inverters with capacitator load for Vout1 with Vin" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/233c5fcd-5f41-4e92-8f44-554139755280">
 
-      Figure 8: Simulations of Inverter_1 output and input at 1pF, 10pF, and 100pF
+      Figure 10: Simulation of NAND for Input d_in Versuses nand_d_out
+<img width="1274" alt="NAND Truth tables simulations" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/789ab792-5f65-42b1-85ac-58563ab6f0d4">
+
+   Figure 11: Graph of NAND at 00, 01, 10, and 11
+## NOT <a name="NOT"></a>
+   1. Figure 12 below shows the input d_in versuses not_d_out and kind of creates a x shape but as you mess with different inputs it tends to flatten out.
+      
+<img width="1272" alt="Not Transmission delay simulation" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/26a9d5ab-8f56-4260-837c-7c60609b8816">
+
+
+      Figure 12: Simulations of NOT for Input d_in versuses not_d_out
 <img width="1264" alt="Schematic of two inverters wih capacitator load for Vout2 with Vin" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/666152c1-0729-4f4c-8741-16881ef880cc">
 
       Figure 9: Simulations of Inverter_1 output and input at 1pF, 10pF, and 100pF
