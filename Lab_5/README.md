@@ -71,12 +71,13 @@
 ## Layout <a name="Layout"></a>
    1. This section contains the layouts of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
 ## NAND <a name="NAND"></a>
-   1. Figure 6 below shows the layout of NAND which is a PMOS combined with a NMOS as well as a N-actives, p-actives, N-Well, and a PWell. The one mistake I might of made that was one of the wires on the layout of Inverter_1 is not the same wire thickness and this is because I kept getting errors when I made it the same size and tried to move it around.
+   1. Figure 6 below shows the layout of NAND which is two PMOS with a P-active between the two PMOS and a P-active on the end of each of the PMOS transistors combined with two NMOS with N-actives between the two NMOS transistors and one N-active on each end of the NMOS transistors and the PMOS should be connected with VDD which is a n-well and the NMOS should be connected with gnd which is p-well and the inputs B and A should be connected to the NMOS and PMOS transistor on the gate. This should look very similar to the NAND gate layout in the tutorial.
       
-<img width="598" alt="Layout of Inverter_1" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/2a7176f4-fe22-4c0b-ba50-f7ddab7e4a45">
+<img width="609" alt="NAND" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/dbc29ab2-79c9-4da2-959f-9afe3afcdeb0">
 
-      Figure 5: Layout of Inverter_1
-## Inverter_2 <a name="Inverter_2"></a>
+
+      Figure 5: Layout of NAND
+## NOT <a name="NOT"></a>
    1. Figure 6 below shows the layout of the Inverter_2 which is a bigger layout than Inverter_1 and is created by inserting four of the Inverter_1 layouts over to this layout and then routing with N-acts, p-acts, p-well, n-well, and connectors to make the routing a easier process.
 <img width="834" alt="Inverter_2 layout" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/cb4c4b4b-909c-4376-957d-74788a045101">
 
