@@ -85,16 +85,25 @@
 
       Figure 7: Layout of NOT GATE
 ## XOR <a name="XOR"></a>
-   1. Figure 3 above shows the handcalculations and work to get to the layout of the XOR using Euler path and Stick diagrams and Figure 8 below shows 4 PMOS transistors in the middle with p-actives between two PMOS transistors and P-actives on the ends of the PMOS transistors and 4 NMOS transistors also with n-actives between two NMOS transistors and n-actives on the ends of the NMOS transistors. To the left of the middle part of the layout is a Not gate layout for input A and to the right of the middle part of the layout is a Not gate layout for input B. The NMOS transistors are connected to the ground which is the p-well and the PMOS transistors are connected to vdd which is the n-well. The layout of the XOR should be very similar to the layout in the tutorial.
+   1. Figure 3 above shows the handcalculations and work to get to the layout of the XOR using Euler path and Stick diagrams and Figure 8 below shows the layout of the XOR gate which contains 4 PMOS transistors in the middle with p-actives between two PMOS transistors and P-actives on the ends of the PMOS transistors and 4 NMOS transistors also with n-actives between two NMOS transistors and n-actives on the ends of the NMOS transistors. To the left of the middle part of the layout is a Not gate layout for input A and to the right of the middle part of the layout is a Not gate layout for input B. The NMOS transistors are connected to the ground which is the p-well and the PMOS transistors are connected to vdd which is the n-well. The layout of the XOR should be very similar to the layout in the tutorial.
       
 <img width="809" alt="XOR" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/bf87a26b-0f5f-4259-a365-f8a1e96c7d17">
 
 
 
       Figure 8: Layout of XOR GATE
+## Full Adder <a name="Full Adder"></a>
+   1. Figure 9 below shows the Full Adder layout which uses two XOR layouts and three NAND layouts all wired together based on using Layout 1 in my case according to the tutorial for Lab 5. The only mistake I have made is the layout I routed is not exactly the same as the one given in the tutorial and the NCC of my full adder did not match because it says I used more wires in the Layout compared to the schematic and this is the only reason the NCC did not match.
+      
+<img width="819" alt="Full Adder" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7cc70aa4-febe-4bcb-8ba0-c29ad8a813be">
+
+
+
+
+      Figure 9: Layout of Full Adder
 ## Simulations <a name="Simulations"></a>
    1. This section contains the layouts of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
-## Inverter_1 and Inverter_2 without load <a name="Inverter_1 and Inverter_2 without load"></a>
+## NAND <a name="NAND"></a>
    1. Figure 7 below shows the simulation graph of the inputs and the both outputs of Inverter_1 and Inverter_2 and based on the figure below I could observe that while the voltage input is linear but the two outputs of Inverter_1 and Inverter_2 are not linear and are kind of sideways x^3 graph.
 <img width="1268" alt="Schematic of two inverters without the load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/544b90d8-67e6-460f-b482-692fb5428bf7">
 
