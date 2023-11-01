@@ -60,12 +60,13 @@
 <img width="788" alt="XOR" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/1c943a23-1670-4302-9780-7494d96c8dfa">
 
    Figure 4: Schematic of XOR GATE
-## Combination of Inverter_1 and Inverter_2 with load <a name="Combination of Inverter_1 and Inverter_2 with load"></a>
-   1. Figure 4 below shows the schematic of the Inverter_1 and Inverter_2 connected together as a circuit with a capacitator load that is variable and changing depending which capacitator value is inputed. This is created by inserting the icons of Inverter_1 and Inverter_2 and using exports, ground, labels, and two capacitors for the label and set the value as {x} according to the lab tutorial provided for this lab. Additionally don't forget to set up the spice code with the C5 model and the spice code given in the tutorial since this is one of the things that will be simulated.
+## Full Adder <a name="Full Adder"></a>
+   1. Figure 5 below shows the schematic of Full Adder using the 3 NAND gates as icons and 2 XOR gates as icons and use three inputs A, B, and Cin and the outputs S and Cout and wire the schematic according to the tutorial that was given to us.
 
-<img width="835" alt="Schematic of both inverters with loads" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/60a90eb6-813a-47e6-a5a5-8725aaaf5031">
+<img width="839" alt="Full adder" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/86385325-981e-46c7-8506-1b9b629a06b2">
 
-      Figure 4: Schematic of Inverter_1 and Inverter_2 with capacitor loads and Spice code simulations
+
+      Figure 5: Schematic of Full Adder using 3 XOR and 2 NAND Gates
       
 ## Layout <a name="Layout"></a>
    1. This section contains the layouts of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
