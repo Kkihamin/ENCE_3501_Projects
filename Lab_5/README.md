@@ -134,10 +134,17 @@
 
 
 
-## Challenges <a name="Challenges"></a>
-   1. The challenges of this lab was doing the routing for the second inverter because you had to be very careful with the spacing and how you orient your components or else you would get alot of errors and looking at the tutorial and trying to do Inverter_2 layout was very difficult but the rest of the lab was pretty straight forward.
+## Answers to Question <a name="Answers to Question"></a>
+   1. The timing of the input pulses can cause glitches in the output of a gate by having different propagation delays for the different gates used and the transition of different logic levels can be a place where glitches in the output of the gate can happen and can change the waveform. For example, a signal of a gate can arrive faster than a signal of another gate and this can cause a glitch or unwanted signal in the output of the gate.
+   2. Figure 15 and Figure 16 below show the DRC and NCC of the schematics and Layouts of the entire lab.
+<img width="837" alt="DRC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d5ca510a-3476-4cc1-94be-c01a4ee4f1f6">
+
+Figure 15: DRC of Schematic and Layout of All gates
+<img width="799" alt="NCC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/b7700f92-f3db-469f-abb7-50a81afdfa3c">
+
+Figure 16: NCC of Schematic and Layout of Lab
 ## Future Plans <a name="Future Plans"></a>
-   1. In the future there will be a lab on making a Full Adder I believe.
+   1. In the future there will be a lab on making a Ring Oscillator, charge pump, and other specialized CMOS purposes.
 
 
 
