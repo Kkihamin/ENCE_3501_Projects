@@ -142,14 +142,14 @@
       Figure 15: Simulations of Full Adder at 00, 01, 10, 11
 ## Answers to Question <a name="Answers to Question"></a>
    1. The timing of the input pulses can cause glitches in the output of a gate by having different propagation delays for the different gates used and the transition of different logic levels can be a place where glitches in the output of the gate can happen and can change the waveform. For example, a signal of a gate can arrive faster than a signal of another gate and this can cause a glitch or unwanted signal in the output of the gate.
-   2. Figure 17 and Figure 18 below show the DRC and NCC of the schematics and Layouts of the entire lab.
+   2. Figure 16 and Figure 17 below show the DRC and NCC of the schematics and Layouts of the entire lab.
 <img width="837" alt="DRC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d5ca510a-3476-4cc1-94be-c01a4ee4f1f6">
 
-Figure 17: DRC of Schematic and Layout of All gates
+Figure 16: DRC of Schematic and Layout of All gates
 
 <img width="799" alt="NCC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/b7700f92-f3db-469f-abb7-50a81afdfa3c">
 
-Figure 18: NCC of Schematic and Layout of Lab
+Figure 17: NCC of Schematic and Layout of Lab
 ## Future Plans <a name="Future Plans"></a>
    1. In the future there will be a lab on making a Ring Oscillator, charge pump, and other specialized CMOS purposes.
 
