@@ -131,19 +131,25 @@
 <img width="1270" alt="XOR truth table simulations" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0407b5ac-0f55-4111-9c89-bd5b73d216cc">
 
       Figure 14: Simulation of XOR at 00, 01, 10, 11
+## Full Adder <a name="Full Adder"></a>
+   1. Figure 15 below shows the simulation graph of the truth table of the Full Adder and what the graph would look like at 00, 01, 10, and 11.
+      
+<img width="1277" alt="ALU simulation" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/17bf3595-2280-44c6-9e48-5b1694bf5710">
 
 
 
+
+      Figure 15: Simulations of Full Adder at 00, 01, 10, 11
 ## Answers to Question <a name="Answers to Question"></a>
    1. The timing of the input pulses can cause glitches in the output of a gate by having different propagation delays for the different gates used and the transition of different logic levels can be a place where glitches in the output of the gate can happen and can change the waveform. For example, a signal of a gate can arrive faster than a signal of another gate and this can cause a glitch or unwanted signal in the output of the gate.
-   2. Figure 15 and Figure 16 below show the DRC and NCC of the schematics and Layouts of the entire lab.
+   2. Figure 17 and Figure 18 below show the DRC and NCC of the schematics and Layouts of the entire lab.
 <img width="837" alt="DRC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d5ca510a-3476-4cc1-94be-c01a4ee4f1f6">
 
-Figure 15: DRC of Schematic and Layout of All gates
+Figure 17: DRC of Schematic and Layout of All gates
 
 <img width="799" alt="NCC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/b7700f92-f3db-469f-abb7-50a81afdfa3c">
 
-Figure 16: NCC of Schematic and Layout of Lab
+Figure 18: NCC of Schematic and Layout of Lab
 ## Future Plans <a name="Future Plans"></a>
    1. In the future there will be a lab on making a Ring Oscillator, charge pump, and other specialized CMOS purposes.
 
