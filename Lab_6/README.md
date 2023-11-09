@@ -37,6 +37,10 @@
 ![HandCalculations](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/f357bbb0-a8b7-4dc0-82fc-f17c45f3361e)
 
 Figure 1: HandCalculations for 3-Charge Pump and Regulator Resistors
+## Schematics <a name="Schematics"></a>
+   1. This section shows the Schematics of the 3-Charge Pump, Ring Oscillator, Regulator, and DC-to-DC Converter. The Schematics of the 3-Charge Pump, Ring Oscillator, Regulator, and DC-to-DC Converter were a little bit different from the Schematics we did in the previous labs because they were alot larger and lot more complex to create because I had to think about the layout while doing the schematic so that when I was doing the layout it would not be very difficult to do the layout based on the schematics that I create. The lab 6 tutorial with the sample schematics of the 3-Charge Pump, Ring Oscillator, Regulator, and DC-to-DC Converter helped a little bit but at the same time made it difficult because it kind of gave me the preconception that if I followed the sample schematics given I would be fine and there would be no problems but this i quickly figured out while making the schematic.
+## 3-Charge Pump <a name="3-Charge Pump"></a>
+   1. 
 
 
 
