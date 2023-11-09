@@ -53,50 +53,105 @@
 ## XOR <a name="XOR"></a>
    1. Figure 3 below shows the work done on paper of simplifying the number of transistors down to the simplest number of transistors possible and it shows some work done to get to the layout using Euler path and Stick diagrams. Figure 4 shows the schematic of the XOR created with 4 PMOS with the width of 6 and length of 2 and 4 NMOS with a width of 6 and length of 2 in a different configuration of position all wired together and another inverters that use the inputs A and B each with one PMOS and one NMOS with width of 6 and length of 2.
 
-<img width="774" alt="Schematic of both inverters without capacitor load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0594b8c9-3fed-4b2f-b54f-7fc2ae62d4eb">
+![HandCalculations for XOR](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/5a79a2d3-bf10-4917-8778-e3e652d0fe4f)
 
-      Figure 3: Schematic of Inverter_1 and Inverter_2 without the load with spice code simulations
-## Combination of Inverter_1 and Inverter_2 with load <a name="Combination of Inverter_1 and Inverter_2 with load"></a>
-   1. Figure 4 below shows the schematic of the Inverter_1 and Inverter_2 connected together as a circuit with a capacitator load that is variable and changing depending which capacitator value is inputed. This is created by inserting the icons of Inverter_1 and Inverter_2 and using exports, ground, labels, and two capacitors for the label and set the value as {x} according to the lab tutorial provided for this lab. Additionally don't forget to set up the spice code with the C5 model and the spice code given in the tutorial since this is one of the things that will be simulated.
 
-<img width="835" alt="Schematic of both inverters with loads" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/60a90eb6-813a-47e6-a5a5-8725aaaf5031">
+      Figure 3: HandCalculations of XOR including EULER PATH, STICK DIAGRAMS, and Simplifications
+<img width="788" alt="XOR" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/1c943a23-1670-4302-9780-7494d96c8dfa">
 
-      Figure 4: Schematic of Inverter_1 and Inverter_2 with capacitor loads and Spice code simulations
+   Figure 4: Schematic of XOR GATE
+## Full Adder <a name="Full Adder"></a>
+   1. Figure 5 below shows the schematic of Full Adder using the 3 NAND gates as icons and 2 XOR gates as icons and use three inputs A, B, and Cin and the outputs S and Cout and wire the schematic according to the tutorial that was given to us.
+
+<img width="839" alt="Full adder" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/86385325-981e-46c7-8506-1b9b629a06b2">
+
+
+      Figure 5: Schematic of Full Adder using 3 XOR and 2 NAND Gates
       
 ## Layout <a name="Layout"></a>
    1. This section contains the layouts of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
-## Inverter_1 <a name="Inverter_1"></a>
-   1. Figure 5 below shows the layout of Inverter_1 which is a PMOS combined with a NMOS as well as a N-actives, p-actives, N-Well, and a PWell. The one mistake I might of made that was one of the wires on the layout of Inverter_1 is not the same wire thickness and this is because I kept getting errors when I made it the same size and tried to move it around.
-<img width="598" alt="Layout of Inverter_1" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/2a7176f4-fe22-4c0b-ba50-f7ddab7e4a45">
+## NAND <a name="NAND"></a>
+   1. Figure 6 below shows the layout of NAND which is two PMOS with a P-active between the two PMOS and a P-active on the end of each of the PMOS transistors combined with two NMOS with N-actives between the two NMOS transistors and one N-active on each end of the NMOS transistors and the PMOS should be connected with VDD which is a n-well and the NMOS should be connected with gnd which is p-well and the inputs B and A should be connected to the NMOS and PMOS transistor on the gate. This should look very similar to the NAND gate layout in the tutorial.
+      
+<img width="609" alt="NAND" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/dbc29ab2-79c9-4da2-959f-9afe3afcdeb0">
 
-      Figure 5: Layout of Inverter_1
-## Inverter_2 <a name="Inverter_2"></a>
-   1. Figure 6 below shows the layout of the Inverter_2 which is a bigger layout than Inverter_1 and is created by inserting four of the Inverter_1 layouts over to this layout and then routing with N-acts, p-acts, p-well, n-well, and connectors to make the routing a easier process.
-<img width="834" alt="Inverter_2 layout" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/cb4c4b4b-909c-4376-957d-74788a045101">
 
-      Figure 6: Layout of Inverter_2
+      Figure 5: Layout of NAND
+## NOT <a name="NOT"></a>
+   1. Figure 7 below shows the layout of the NOT which is a PMOS transistor with two p-active one on each end and a NMOS transistor with two n-active one on each end and the PMOS is connected to the n-well which is vdd and the NMOS connected to the p-well which is gnd and the input A is connected to the PMOS and NMOS and the output Y connecting the PMOS and NMOS and this should be very similar to the tutorial in the layout.
+
+<img width="527" alt="NOT" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/02929ed5-4e9a-450c-88bc-5ee50be7c3e9">
+
+
+      Figure 7: Layout of NOT GATE
+## XOR <a name="XOR"></a>
+   1. Figure 3 above shows the handcalculations and work to get to the layout of the XOR using Euler path and Stick diagrams and Figure 8 below shows the layout of the XOR gate which contains 4 PMOS transistors in the middle with p-actives between two PMOS transistors and P-actives on the ends of the PMOS transistors and 4 NMOS transistors also with n-actives between two NMOS transistors and n-actives on the ends of the NMOS transistors. To the left of the middle part of the layout is a Not gate layout for input A and to the right of the middle part of the layout is a Not gate layout for input B. The NMOS transistors are connected to the ground which is the p-well and the PMOS transistors are connected to vdd which is the n-well. The layout of the XOR should be very similar to the layout in the tutorial.
+      
+<img width="809" alt="XOR" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/bf87a26b-0f5f-4259-a365-f8a1e96c7d17">
+
+
+
+      Figure 8: Layout of XOR GATE
+## Full Adder <a name="Full Adder"></a>
+   1. Figure 9 below shows the Full Adder layout which uses two XOR layouts and three NAND layouts all wired together based on using Layout 1 in my case according to the tutorial for Lab 5. The only mistake I have made is the layout I routed is not exactly the same as the one given in the tutorial and the NCC of my full adder did not match because it says I used more wires in the Layout compared to the schematic and this is the only reason the NCC did not match.
+      
+<img width="819" alt="Full Adder" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7cc70aa4-febe-4bcb-8ba0-c29ad8a813be">
+
+
+
+
+      Figure 9: Layout of Full Adder
 ## Simulations <a name="Simulations"></a>
-   1. This section contains the layouts of the Nmos, Final_IC_Not_ESD, pActive_nWell, pWell_nActive, Pad_ESD, Padframe_ESD, and Final_IC_ESD in the sub sections provided below.
-## Inverter_1 and Inverter_2 without load <a name="Inverter_1 and Inverter_2 without load"></a>
-   1. Figure 7 below shows the simulation graph of the inputs and the both outputs of Inverter_1 and Inverter_2 and based on the figure below I could observe that while the voltage input is linear but the two outputs of Inverter_1 and Inverter_2 are not linear and are kind of sideways x^3 graph.
-<img width="1268" alt="Schematic of two inverters without the load" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/544b90d8-67e6-460f-b482-692fb5428bf7">
+   1. This section contains the simulations of the NAND for the delays and the truth table, Not for the delay and the truth table, XOR in delay and truth table, and Full adder in truth table all shown in sub sections below.
+## NAND <a name="NAND"></a>
+   1. Figure 10 below shows the simulation graph of the input d_in versuses nand_d_out which is the output of the NAND. Figure 10 shows that the input and outputs are kind of reversed to create a x shape but as you mess with the inputs they will flatten and stabilize. Figure 11 below shows the simulation graph of the truth table of the NAND and what the graph would look like at 00, 01, 10, and 11.
+      
+<img width="1266" alt="NAND simulations 1" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/eddabe88-b190-4b7b-bd02-dac98f7cc7a3">
 
-      Figure 7: Simulation of Inverter_1 and Inverter_2 with a linear input
-## Inverter_1 and Inverter_2 with load <a name="Inverter_1 and Inverter_2 with load"></a>
-   1. Figure 8 and Figure 9 below shows the simulations of Inverter_1 and Inverter_2 with a Capacitor load of 1pF, 10pF, and 100pF and as you can see from the Figures below the outputs are going all over the place and is not stable at all. In Figure 10 below you can see the simulations of Inverter_1 and Inverter_2 with a Capacitor load of 100fF and the outputs of the Inverter_1 and Inverter_2 is less unstable and you see that it curves and starts to stablize.
-<img width="1269" alt="Schematic of two inverters with capacitator load for Vout1 with Vin" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/233c5fcd-5f41-4e92-8f44-554139755280">
 
-      Figure 8: Simulations of Inverter_1 output and input at 1pF, 10pF, and 100pF
-<img width="1264" alt="Schematic of two inverters wih capacitator load for Vout2 with Vin" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/666152c1-0729-4f4c-8741-16881ef880cc">
+      Figure 10: Simulation of NAND for Input d_in Versuses nand_d_out
+<img width="1274" alt="NAND Truth tables simulations" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/789ab792-5f65-42b1-85ac-58563ab6f0d4">
 
-      Figure 9: Simulations of Inverter_1 output and input at 1pF, 10pF, and 100pF
-<img width="1266" alt="Schematic of two inverters with capacitator load at 1f 10f and 100f" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/f9e4c940-7633-400a-ac16-6ba48a74ed00">
+   Figure 11: Simulation of NAND at 00, 01, 10, and 11
+## NOT <a name="NOT"></a>
+   1. Figure 12 below shows the input d_in versuses not_d_out and kind of creates a x shape but as you mess with different inputs it tends to flatten out.
+      
+<img width="1272" alt="Not Transmission delay simulation" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/26a9d5ab-8f56-4260-837c-7c60609b8816">
 
-      Figure 10: Simulations of both Inverter_1 and Inverter_2 outputs and input at 100fF
-## Challenges <a name="Challenges"></a>
-   1. The challenges of this lab was doing the routing for the second inverter because you had to be very careful with the spacing and how you orient your components or else you would get alot of errors and looking at the tutorial and trying to do Inverter_2 layout was very difficult but the rest of the lab was pretty straight forward.
+
+      Figure 12: Simulations of NOT for Input d_in versuses not_d_out
+## XOR <a name="XOR"></a>
+   1. Figure 13 below shows the simulation graph of the input d_in versuses xor_d_out which is the output of the XOR. Figure 13 shows that the input and outputs are kind of reversed to create a x shape but as you mess with the inputs they will flatten and stabilize. Figure 14 below shows the simulation graph of the truth table of the NAND and what the graph would look like at 00, 01, 10, and 11.
+      
+<img width="1271" alt="XOR transmission delay simulations" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/2b6eb416-c670-4a0f-9cb5-9ca14db7c46b">
+
+
+
+      Figure 13: Simulations of XOR for Input d_in versuses xor_d_out
+<img width="1270" alt="XOR truth table simulations" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/0407b5ac-0f55-4111-9c89-bd5b73d216cc">
+
+      Figure 14: Simulation of XOR at 00, 01, 10, 11
+## Full Adder <a name="Full Adder"></a>
+   1. Figure 15 below shows the simulation graph of the truth table of the Full Adder and what the graph would look like at 00, 01, 10, and 11.
+      
+<img width="1277" alt="ALU simulation" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/17bf3595-2280-44c6-9e48-5b1694bf5710">
+
+
+
+
+      Figure 15: Simulations of Full Adder at 00, 01, 10, 11
+## Answers to Question <a name="Answers to Question"></a>
+   1. The timing of the input pulses can cause glitches in the output of a gate by having different propagation delays for the different gates used and the transition of different logic levels can be a place where glitches in the output of the gate can happen and can change the waveform. For example, a signal of a gate can arrive faster than a signal of another gate and this can cause a glitch or unwanted signal in the output of the gate.
+   2. Figure 16 and Figure 17 below show the DRC and NCC of the schematics and Layouts of the entire lab.
+<img width="837" alt="DRC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d5ca510a-3476-4cc1-94be-c01a4ee4f1f6">
+
+Figure 16: DRC of Schematic and Layout of All gates
+
+<img width="799" alt="NCC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/b7700f92-f3db-469f-abb7-50a81afdfa3c">
+
+Figure 17: NCC of Schematic and Layout of Lab
 ## Future Plans <a name="Future Plans"></a>
-   1. In the future there will be a lab on making a Full Adder I believe.
+   1. In the future there will be a lab on making a Ring Oscillator, charge pump, and other specialized CMOS purposes.
 
 
 
