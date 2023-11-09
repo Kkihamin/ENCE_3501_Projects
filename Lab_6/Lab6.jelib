@@ -131,7 +131,7 @@ Evout||D5G4;Y9;|pin@33||U
 X
 
 # Cell 3_stage_charge_pump;1{sch}
-C3_stage_charge_pump;1{sch}||schematic|1699032263668|1699556401371|
+C3_stage_charge_pump;1{sch}||schematic|1699032263668|1699565041851|
 I3_stage_charge_pump;1{ic}|3_stage_@1||20.5|23|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@0||-50|-16||||
@@ -490,7 +490,7 @@ EVout||D5G2;X-2;|pin@2||U
 X
 
 # Cell Regulation;1{lay}
-CRegulation;1{lay}||mocmos|1699497668947|1699563885966||DRC_last_good_drc_area_date()G1699563668161|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1699563964632
+CRegulation;1{lay}||mocmos|1699497668947|1699565424886||DRC_last_good_drc_area_date()G1699565427411|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1699565427411
 INOT;1{lay}|NOT@0||194.5|-14.5|||D5G4;
 INOT;1{lay}|NOT@1||258.5|-15|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
@@ -571,7 +571,7 @@ Evout||D5G4;Y-10;|pin@26||U
 X
 
 # Cell Regulation;1{sch}
-CRegulation;1{sch}||schematic|1699395407523|1699563535306|
+CRegulation;1{sch}||schematic|1699395407523|1699565387073|
 INOT;1{ic}|NOT@0||-2.5|4.5|||D5G4;
 INOT;1{ic}|NOT@1||14.5|4.5|||D5G4;
 IRegulation;1{ic}|Regulati@0||33.5|20.5|||D5G4;
@@ -594,8 +594,8 @@ NTransistor|pmos@1||-10|9.5|||YRRR|2|ATTR_length(D5G0.5;X-0.5;Y-1;)D40.0|ATTR_wi
 NPower|pwr@0||-27.5|10||||
 NPower|pwr@1||-18.5|14||||
 NPower|pwr@2||-12|14||||
-NResistor|resnwell@0||-27.5|4.5|||RRR|3|ATTR_length(D5G0.25;X-1.5;)D200.0|ATTR_width(D5G0.5;X1.5;)D119.679|SCHEM_resistance(D5G1;)S20MEG
-NResistor|resnwell@1||-27.5|-1.5|||RRR|3|ATTR_length(D5G0.25;X-1.5;)D50.0|ATTR_width(D5G0.5;X1.5;)D71.895|SCHEM_resistance(D5G1;)S3MEG
+NResistor|resnwell@0||-27.5|4.5|||RRR|3|ATTR_length(D5G0.25;X-1.5;)D200.0|ATTR_width(D5G0.5;X1.5;)D119.76|SCHEM_resistance(D5G1;)S20MEG
+NResistor|resnwell@1||-27.5|-1.5|||RRR|3|ATTR_length(D5G0.25;X-1.5;)D50.0|ATTR_width(D5G0.5;X1.5;)D71.856|SCHEM_resistance(D5G1;)S3MEG
 Awire|net@5|||900|nmos@0|s|-18.5|-0.5|gnd@0||-18.5|-1
 Awire|net@6|||900|pwr@0||-27.5|10|resnwell@0|a|-27.5|6.5
 Awire|net@8|||900|resnwell@0|b|-27.5|2.5|pin@1||-27.5|1.5
