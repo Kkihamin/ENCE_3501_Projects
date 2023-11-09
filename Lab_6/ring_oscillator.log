@@ -1,0 +1,25 @@
+Circuit: *** SPICE deck for cell ring_oscillator{sch} from library Lab6
+
+WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for ven.  Increasing period to 4.2e-08
+WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for vosc2.  Increasing period to 4.2e-08
+WARNING: Less than two connections to node 1.  This node is used by vdd.
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Nov  9 14:17:12 2023
+Total elapsed time: 0.218 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2138
+traniter = 2111
+tranpoints = 1053
+accept = 1050
+rejected = 3
+matrix size = 60
+fillins = 0
+solver = Normal
+Avg thread counts: 3.3/3.7/3.6/2.3
+Matrix Compiler1: 9.09 KB object code size  1.6/1.1/[0.7]
+Matrix Compiler2: 6.92 KB object code size  0.7/1.0/[0.6]
+

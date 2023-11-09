@@ -1,0 +1,31 @@
+*** SPICE deck for cell 3_stage_Charge_sim{lay} from library Lab6
+*** Created on Wed Nov 08, 2023 20:56:13
+*** Last revised on Wed Nov 08, 2023 21:03:13
+*** Written on Wed Nov 08, 2023 21:03:21 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Lab6__3_stage_charge_pump FROM CELL 3_stage_charge_pump{lay}
+.SUBCKT Lab6__3_stage_charge_pump 0 osc osc2 osc3 vdd
+*** WARNING: node Poly1-Poly2-Capacitor['cap@0'] component appears to be shorted on net network 'osc' in cell '3_stage_charge_pump{lay}'
+*** WARNING: node Poly1-Poly2-Capacitor['cap@1'] component appears to be shorted on net network 'osc2' in cell '3_stage_charge_pump{lay}'
+*** WARNING: node Poly1-Poly2-Capacitor['cap@2'] component appears to be shorted on net network 'osc3' in cell '3_stage_charge_pump{lay}'
+*** WARNING: node Poly1-Poly2-Capacitor['cap@3'] component appears to be shorted on net network 'gnd/vout' in cell '3_stage_charge_pump{lay}'
+Mnmos_1 osc2 osc osc 0 N_1u L=0.6U W=3U AS=12.397P AD=29.7P PS=27.15U PD=22.8U
+Mnmos_2 osc3 osc2 osc2 0 N_1u L=0.6U W=3U AS=29.7P AD=36.225P PS=22.8U PD=27.15U
+Mnmos_3 0 osc3 osc3 0 N_1u L=0.6U W=3U AS=36.225P AD=146.025P PS=27.15U PD=140.85U
+Mnmos_4 osc vdd vdd 0 N_1u L=0.6U W=3U AS=37.125P AD=12.397P PS=55.5U PD=27.15U
+*** WARNING: node N-Well-Resistor['resnwell@0'] component appears to be shorted on net network 'gnd/vout' in cell '3_stage_charge_pump{lay}'
+.ENDS Lab6__3_stage_charge_pump
+
+*** TOP LEVEL CELL: 3_stage_Charge_sim{lay}
+X3_stage__0 0 3_stage__0_osc 3_stage__0_osc2 3_stage__0_osc3 vdd Lab6__3_stage_charge_pump
+
+* Spice Code nodes in cell cell '3_stage_Charge_sim{lay}'
+vdd vdd 0 dc 5
+vin d_in 0 pulse(0v 5v 10n 1n 1n 40n 40n)
+*vin d_in2 0 pulse(0v 5v 10n 1n 1n 40n 40n)
+*vin d_in3 0 pulse(0v 5v 10n 1n 1n 40n 40n)
+.tran 0 40n
+.include cmosedu_models.txt
+.END

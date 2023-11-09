@@ -1,0 +1,44 @@
+*** SPICE deck for cell ring_oscillator{sch} from library Lab6
+*** Created on Sun Nov 05, 2023 22:25:08
+*** Last revised on Thu Nov 09, 2023 10:49:22
+*** Written on Thu Nov 09, 2023 14:17:11 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Lab6__NAND FROM CELL NAND{sch}
+.SUBCKT Lab6__NAND A B Y
+** GLOBAL 0
+** GLOBAL vdd
+Mnmos_2 Y A net_34 0 N_50n L=0.6U W=3U
+Mnmos_3 net_34 B 0 0 N_50n L=0.6U W=3U
+Mpmos_2 Y A vdd vdd P_50n L=0.6U W=3U
+Mpmos_3 Y B vdd vdd P_50n L=0.6U W=3U
+.ENDS Lab6__NAND
+
+*** SUBCIRCUIT Lab6__NOT FROM CELL NOT{sch}
+.SUBCKT Lab6__NOT A Y
+** GLOBAL 0
+** GLOBAL vdd
+Mnmos_1 Y A 0 0 N_50n L=0.6U W=3U
+Mpmos_1 Y A vdd vdd P_50n L=0.6U W=6U
+.ENDS Lab6__NOT
+
+.global 0 vdd
+
+*** TOP LEVEL CELL: ring_oscillator{sch}
+Cpoly2cap_0 0 net_0 10u
+Cpoly2cap_1 0 net_31 10u
+Cpoly2cap_2 0 net_35 10u
+XNAND_0 osc En net_0 Lab6__NAND
+XNOT_0 net_0 net_31 Lab6__NOT
+XNOT_1 net_31 net_35 Lab6__NOT
+XNOT_2 net_35 osc2 Lab6__NOT
+XNOT_3 osc2 osc Lab6__NOT
+
+* Spice Code nodes in cell cell 'ring_oscillator{sch}'
+vdd 0 1 dc 1
+VEn En 0 pulse(0v 1v 1n 1n 1n 40n 40n)
+Vosc2 osc2 0 pulse(0v 1v 1n 1n 1n 40n 40n)
+.tran 0n 40n
+.include cmosedu_models.txt
+.END

@@ -1,0 +1,43 @@
+*** SPICE deck for cell test_ring_oscillator{sch} from library Ring_Oscillator
+*** Created on Wed Nov 01, 2023 11:33:45
+*** Last revised on Wed Nov 01, 2023 11:36:43
+*** Written on Wed Nov 01, 2023 11:37:03 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Ring_Oscillator__NOT FROM CELL NOT{sch}
+.SUBCKT Ring_Oscillator__NOT A Y
+** GLOBAL 0
+** GLOBAL vdd
+Mnmos_0 Y A 0 0 N_1u L=0.6U W=3U
+Mpmos_0 Y A vdd vdd P_1u L=0.6U W=6U
+.ENDS Ring_Oscillator__NOT
+
+*** SUBCIRCUIT Ring_Oscillator__ring_oscillator FROM CELL ring_oscillator{sch}
+.SUBCKT Ring_Oscillator__ring_oscillator osc_out
+** GLOBAL 0
+** GLOBAL vdd
+XNOT_0 osc_out net_0 Ring_Oscillator__NOT
+XNOT_1 net_0 net_1 Ring_Oscillator__NOT
+XNOT_2 net_1 net_2 Ring_Oscillator__NOT
+XNOT_3 net_2 net_3 Ring_Oscillator__NOT
+XNOT_4 net_3 net_5 Ring_Oscillator__NOT
+XNOT_5 net_5 net_6 Ring_Oscillator__NOT
+XNOT_6 net_6 net_8 Ring_Oscillator__NOT
+XNOT_7 net_8 net_9 Ring_Oscillator__NOT
+XNOT_8 net_9 net_10 Ring_Oscillator__NOT
+XNOT_9 net_10 net_11 Ring_Oscillator__NOT
+XNOT_10 net_11 osc_out Ring_Oscillator__NOT
+.ENDS Ring_Oscillator__ring_oscillator
+
+.global 0 vdd
+
+*** TOP LEVEL CELL: test_ring_oscillator{sch}
+Xring_osc_0 ring_osc_0_osc_out Ring_Oscillator__ring_oscillator
+
+* Spice Code nodes in cell cell 'test_ring_oscillator{sch}'
+vdd vdd 0 dc 5
+vin d_in 0 pulse(0v 5v 10n 1n 1n 40n 40n)
+.tran 0 40n
+.include cmosedu_models.txt
+.END

@@ -1,0 +1,27 @@
+*** SPICE deck for cell 3_stage_charge_pump{sch} from library Lab6
+*** Created on Fri Nov 03, 2023 11:24:23
+*** Last revised on Thu Nov 09, 2023 10:57:05
+*** Written on Thu Nov 09, 2023 11:08:22 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global 0 vdd
+
+*** TOP LEVEL CELL: 3_stage_charge_pump{sch}
+Mnmos_1 vdd vdd net_15 0 N_50n L=0.6U W=6U
+Mnmos_2 net_15 net_15 net_27 0 N_50n L=0.6U W=6U
+Mnmos_3 net_27 net_27 net_37 0 N_50n L=0.6U W=6U
+Mnmos_4 net_37 net_37 vout 0 N_50n L=0.6U W=6U
+Cpoly2cap_0 0 vout 100u
+Cpoly2cap_1 osc net_15 100u
+Cpoly2cap_2 osc2 net_27 100u
+Cpoly2cap_3 osc net_37 100u
+Rresnwell_0 0 vout 2MEG
+
+* Spice Code nodes in cell cell '3_stage_charge_pump{sch}'
+vdd vdd 0 dc 1
+vosc osc 0 pulse(0v 1v 1n 1n 1n 0.025 0.05)
+vosc2 osc2 0 pulse(0v 1v 1n 1n 1n 0.025 0.05)
+.tran 0 20
+.include cmosedu_models.txt
+.END
