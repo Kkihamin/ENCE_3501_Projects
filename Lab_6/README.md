@@ -51,6 +51,8 @@ Figure 1: HandCalculations for 3-Charge Pump and Regulator Resistors
       <img width="840" alt="Ring_Oscillator" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/fb74ffe9-3501-41d3-88be-1a87d030a6be">
 
       Figure 3: Schematic of Ring_Oscillator
+## Regulator <a name="Regulator"></a>
+   1. The first I did before creating the schematic of 3-Charge pump was calculate the width and length. I used the equation $\(L div W) * Rsquare\$ and for this equation I realized that I needed to either assume the length or width to get the other dimension so I decided the length to be 20 and I knew the Rsquare was equal to 835 from previous assignments and looking back at my notes so I multiplied 835 by 20 which equals to 2M. Next, I divided 2M and 16,700 to get a width of 119.76. Then, I looked at the special cmos text file to decide what the spice model for the NMOS and PMOS should be based on whether the vdd is 1V or 5V which in this case we are using 1V which makes the spice model N_50n and P_50n. Then, I used 4 NMOS transistors with width of 20 and a length of 2 and 4 100u capacitors but I did not change the size on the 100u capacitors because I could not find what formula would be the best to figure out the size of the poly capacitors and I was unsure whether the size of the poly capacitors needed to change. Finally, wire all the components together using the Lab 6 intro document like the sample circuit of the 3-stage pump given in the document. Figure 2 below shows the schematic of the 3-Stage pump circuit.
 
 
 
