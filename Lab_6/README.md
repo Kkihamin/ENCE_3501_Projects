@@ -85,7 +85,41 @@ Figure 5: Schematic of DC-DC Converter without Spice Code
    <img width="765" alt="Regulator" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/4035d81e-2ceb-442c-8107-2b469c8ca5d2">
 
    Figure 8: Layout of Regulator
-   
+## DC-DC Converter <a name="DC-DC Converter"></a>
+   1. The layout of the DC-DC Converter was created by importing the layouts of the  3 stage charge pump, ring oscillator, and regulator and wiring them together exactly like the schematic but this layout of the DC-DC Converter is not the most accurate because there were problems in the previous layouts so the simulations, NCC, and layout itself would not be exactly the best representation. Due to the limited time I had to dedicate time to this lab and dedicating more time to the final project made me not worry about the layout of the DC-DC Converter from not working with the simulation. Figure 9 below shows the layout of the DC-DC Converter.
+
+      <img width="718" alt="DC-DC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/40d31ba4-a91a-4fba-b196-34cb1c66fa84">
+      
+      Figure 9: Layout of DC-DC Converter
+## Simulations <a name="Simulations"></a>
+   1. This section shows the Simulations of the 3-Charge Pump, Ring Oscillator, and Regulator. The simulations are only from the schematic for the 3-charge pump, ring oscillator, and the regulator but there is no simulation for the DC-to-DC Converter due to lack of time and focusing more on the final project. The layout simulations did not work so I was kind of frustrated because there were so many errors and I was overwhelmed but I was not able to figure out why the simulations for the layouts were not working.
+## 3-Charge Pump <a name="3-Charge Pump"></a>
+   1. The Simulation of 3-Charge Pump for the schematic is shown in Figure 10 below. The problem wih this simulation is the 3-Charge Pump does not rise up to the correct voltage and in my case the 3- Charge Pump rose but stop at a number below 1V and one reason I could of done to raise the voltage is make it a higher stage charge pump and mess with the periods more but due to the lack of time and wanting to focus on the final project I just kept the simulation as it was originally. If you see other images of the simulations that say layout it is actually not the simulation of the layout and just a duplicate copy from the schematic simulation.
+
+<img width="1279" alt="Transient for 3 charge pump for schematic" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/bf1e7b5f-4d92-4776-a711-3f533d3da906">
+
+
+   Figure 10: Simulation of 3 Charge Pump failing to meet the correct Voltage
+## Ring_Oscillator <a name="Ring_Oscillator"></a>
+   1. The layout of the Ring Oscillator was created using 4 Inverter layouts dragged in from a previous lab, 1 NAND layout dragged in from a previous lab, and 3 poly capacitors that are 10uF. I did the layout in the same structure as the schematic and I looked at the schematic to see and understand how to wire things together in the layout. The only problems are that it is not feasible to put the capacitors on the layout because the size for 10uF capacitors would be way too large and the simulations do not run because the NCC for the export on the output of this circuit does not exist in the layout and there are other problems with the simulations that I was not able to figure out. Figure 7 below shows the layout of Ring Oscillator looking exactly like the schematic.
+
+      <img width="830" alt="Ring_Oscillator" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d9682bfb-44b4-416f-85a5-71b12fb4dce5">
+
+      Figure 7: Ring Oscillator Layout
+## Regulator <a name="Regulator"></a>
+   1. The layout of the Regulator was created using two inverter layouts dragged in from a previous lab, 2 PMOS transistors with P-active connectors, 1 NMOS transistor with n-active connectors, and one 20M resistor and one 3M resistor. I did the layout in the same structure as the schematic and I looked at my schematic to see and understand how to wire things together in the layout. The problem was that it is not very good to put the resistors in the layout because they are pretty big and the simulations ran once on the layout and then after that one time if stopped working and the NCC export for the output was a issue for this layout as well. Figure 8 below shows the layout of the Regulator looking similar to the schematic.
+
+   <img width="765" alt="Regulator" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/4035d81e-2ceb-442c-8107-2b469c8ca5d2">
+
+   Figure 8: Layout of Regulator
+## DC-DC Converter <a name="DC-DC Converter"></a>
+   1. The layout of the DC-DC Converter was created by importing the layouts of the  3 stage charge pump, ring oscillator, and regulator and wiring them together exactly like the schematic but this layout of the DC-DC Converter is not the most accurate because there were problems in the previous layouts so the simulations, NCC, and layout itself would not be exactly the best representation. Due to the limited time I had to dedicate time to this lab and dedicating more time to the final project made me not worry about the layout of the DC-DC Converter from not working with the simulation. Figure 9 below shows the layout of the DC-DC Converter.
+
+      <img width="718" alt="DC-DC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/40d31ba4-a91a-4fba-b196-34cb1c66fa84">
+      
+      Figure 9: Layout of DC-DC Converter
+
+
 
 
 
