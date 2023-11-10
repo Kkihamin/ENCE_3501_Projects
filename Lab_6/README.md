@@ -107,6 +107,14 @@ Figure 5: Schematic of DC-DC Converter without Spice Code
 <img width="1270" alt="schematic simulation for ring oscillator" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/9cf32bac-d463-4b17-8f7c-a0651963ae0d">
 
      Figure 11: Simulation of Ring Oscillator
+## Regulator <a name="Regulator"></a>
+   1. The simulation of the Regulator is shown in Figure 12 below. The problem is I got a sine wave for the simulation of the schematic and I was uncertain whether that is what the waveform of the Regulator is suppose to look like and the layout only ran once successfully but I was unable to capture the simulation of the layout but I got the same waveform from what I remember.
+
+<img width="1264" alt="Regulation simulation for schematic" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d7465161-33ef-4f77-ab27-b26ff0a97a75">
+
+Figure 12: Simulation of Regulator
+## DC-DC Converter <a name="DC-DC Converter"></a>
+
 
  
 
