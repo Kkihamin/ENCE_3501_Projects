@@ -101,6 +101,14 @@ Figure 5: Schematic of DC-DC Converter without Spice Code
 
 
    Figure 10: Simulation of 3 Charge Pump failing to meet the correct Voltage
+## Ring_Oscillator <a name="Ring_Oscillator"></a>
+   1. The simulation of ring oscillator for the schematic is shown in Figure 11 below. There are actually not any problems with this simulation of the ring oscillator because it shows the pulse waveforms correctly but it does not show anything in the layout which is the problem. The one thing that could be improved for the ring oscillator is more accuracy in the pulse waveforms.
+
+     <img width="1270" alt="schematic simulation for ring oscillator" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/9cf32bac-d463-4b17-8f7c-a0651963ae0d">
+
+     Figure 11: Simulation of Ring Oscillator
+
+ 
 
 
 
