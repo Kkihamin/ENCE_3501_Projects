@@ -59,6 +59,13 @@ Figure 1: HandCalculations for 3-Charge Pump and Regulator Resistors
 <img width="838" alt="Regulator" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/126c1814-1889-4a57-a488-edac87302a41">
 
 Figure 4: Schematic of Regulator Circuit
+## DC-DC Converter <a name="DC-DC Converter"></a>
+   1. The schematic of the DC-DC converter is shown below in Figure 5 but I did not take the time to simulate the DC-DC converter because it did not actually work on my end and I did not want to spend too much time trying to figure why the DC-DC Converter simulations were not working and I wanted to focus more on the final project. If I did not have a final project I would of tried to figure out how to simulate the DC-DC Converter.
+      
+<img width="839" alt="DC-DC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/ba875236-604f-4bbf-8316-d9b915f39702">
+
+Figure 5: Schematic of DC-DC Converter without Spice Code
+
 
 
 
