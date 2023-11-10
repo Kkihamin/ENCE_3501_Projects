@@ -91,7 +91,7 @@ Figure 5: Schematic of DC-DC Converter without Spice Code
       <img width="718" alt="DC-DC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/40d31ba4-a91a-4fba-b196-34cb1c66fa84">
       
       Figure 9: Layout of DC-DC Converter
-## Simulations <a name="Simulations"></a>
+      ## Simulations <a name="Simulations"></a>
    1. This section shows the Simulations of the 3-Charge Pump, Ring Oscillator, and Regulator. The simulations are only from the schematic for the 3-charge pump, ring oscillator, and the regulator but there is no simulation for the DC-to-DC Converter due to lack of time and focusing more on the final project. The layout simulations did not work so I was kind of frustrated because there were so many errors and I was overwhelmed but I was not able to figure out why the simulations for the layouts were not working.
 ## 3-Charge Pump <a name="3-Charge Pump"></a>
    1. The Simulation of 3-Charge Pump for the schematic is shown in Figure 10 below. The problem wih this simulation is the 3-Charge Pump does not rise up to the correct voltage and in my case the 3- Charge Pump rose but stop at a number below 1V and one reason I could of done to raise the voltage is make it a higher stage charge pump and mess with the periods more but due to the lack of time and wanting to focus on the final project I just kept the simulation as it was originally. If you see other images of the simulations that say layout it is actually not the simulation of the layout and just a duplicate copy from the schematic simulation.
