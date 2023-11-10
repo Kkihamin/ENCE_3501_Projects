@@ -114,6 +114,11 @@ Figure 5: Schematic of DC-DC Converter without Spice Code
 
 Figure 12: Simulation of Regulator
 ## DC-DC Converter <a name="DC-DC Converter"></a>
+   1. For the simulations regarding the schematic and layout of the DC-DC converter I did not have because I ran into problems in simulating the layout and some schemtics of the previous circuits that I determined that the simulation for DC-DC Converter would fail and not simulate but if I had some time and not a final project to worry about I would have definitely tried to simulate this DC-DC Converter and I would of tried to fix my issues that I ran into above.
+## Challenges <a name="Challenges"></a>
+   1. The challenges with this lab was there was limited information and alot of the information I had to figure out and try to find a working solution especially with the poly poly capacitor changing the sizes to double the width and the length after messing with the layout and messing with spice code and simulations. Also, another challenge was just knowing a lot more things about the ElectricVLSI software. Personally I think this lab was a really good learning experience and lab and I am not sure if I did everything completely right but I think this was definitely a good learning experience.
+## Future Plans <a name="Future Plans"></a>
+   1. My future plans will be working on a Final project for VLSI and making a 16 bit counter using a template that has alot of components created and using D flip flops to implement a counter and wrapping up the rest of the work for this class.
 
 
  
