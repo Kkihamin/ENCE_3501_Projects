@@ -1,7 +1,7 @@
 *** SPICE deck for cell ring_oscillator{sch} from library Lab6
 *** Created on Sun Nov 05, 2023 22:25:08
-*** Last revised on Thu Nov 09, 2023 10:49:22
-*** Written on Thu Nov 09, 2023 14:17:11 by Electric VLSI Design System, version 9.07
+*** Last revised on Fri Nov 10, 2023 12:01:44
+*** Written on Fri Nov 10, 2023 12:11:17 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 
@@ -36,9 +36,8 @@ XNOT_2 net_35 osc2 Lab6__NOT
 XNOT_3 osc2 osc Lab6__NOT
 
 * Spice Code nodes in cell cell 'ring_oscillator{sch}'
-vdd 0 1 dc 1
-VEn En 0 pulse(0v 1v 1n 1n 1n 40n 40n)
-Vosc2 osc2 0 pulse(0v 1v 1n 1n 1n 40n 40n)
-.tran 0n 40n
+vdd vdd 0 dc 1
+VEn En 0 dc 1
+.tran 0 10
 .include cmosedu_models.txt
 .END

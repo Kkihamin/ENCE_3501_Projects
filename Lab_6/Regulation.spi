@@ -1,7 +1,7 @@
 *** SPICE deck for cell Regulation{sch} from library Lab6
 *** Created on Tue Nov 07, 2023 15:16:47
-*** Last revised on Thu Nov 09, 2023 13:58:55
-*** Written on Thu Nov 09, 2023 14:13:58 by Electric VLSI Design System, version 9.07
+*** Last revised on Fri Nov 10, 2023 12:16:53
+*** Written on Fri Nov 10, 2023 12:17:04 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 
@@ -25,8 +25,8 @@ XNOT_0 net_21 net_28 Lab6__NOT
 XNOT_1 net_28 En Lab6__NOT
 
 * Spice Code nodes in cell cell 'Regulation{sch}'
-vdd 0 1 dc 1
-Vin Vout 0 pulse(0v 1v 10n 10n 40n 40n)
+vdd vdd 0 dc 1
+Vin Vout 0 SINE(0 1 40 45 0 0)
 .tran 0 40n
 .include cmosedu_models.txt
 .END
