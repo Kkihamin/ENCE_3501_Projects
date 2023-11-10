@@ -65,6 +65,17 @@ Figure 4: Schematic of Regulator Circuit
 <img width="839" alt="DC-DC" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/ba875236-604f-4bbf-8316-d9b915f39702">
 
 Figure 5: Schematic of DC-DC Converter without Spice Code
+## Layout <a name="Layout"></a>
+   1. This section shows the Layouts of the 3-Charge Pump, Ring Oscillator, Regulator, and DC-to-DC Converter. The Layouts of the 3-Charge Pump, Ring Oscillator, Regulator, and DC-to-DC Converter does not have any simulations because I was getting errors when trying to simulate this and it just was not working for me for some reason. I did keep the capacitors and resistors in the layouts even though the capacitors and resistors should not be included in the layout because the size of these components are too large to put on the layout. Also, another error I faced was the NCC still did not match up for the layouts because the exports on the output of each of the circuits were not showing up even though I did add them and I could not figure it out and tried to redo it multiple times but the error did not disappear. All the layouts of the circuits are shown below.
+## 3-Charge Pump <a name="3-Charge Pump"></a>
+   1. The layout of the 3-Charge Pump was created using 4 NMOS transistors all with a width of 20 and a length of 2, 4 100uF capacitors, and 1 2M ohm resistor with the width of 119.76 and length of 20. I did the layout in the same structure as the schematic and I looked at the schematic to see and understand how to wire things together in the layout. The only problems are that it is not feasible to put the capacitors on the layout because the size for 100uF capacitors would be way too large and the simulations do not run because the NCC for the export on the output of this circuit does not exist in the layout and there are other problems with the simulations that I was not able to figure out. Figure 6 below shows the layout of 3-Charge Pump looking exactly like the schematic.
+
+   <img width="534" alt="3-stage charge pump" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7c1f619e-38a1-450b-b7c2-d0f7aca10597">
+
+   Figure 6: Layout of 3-Stage Charge Pump not done Exactly Correct
+
+
+      
 
 
 
