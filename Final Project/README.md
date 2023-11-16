@@ -30,6 +30,7 @@
    
    4.[Counter16](#Counter16)
 ## Introduction <a name="introduction"></a>
+
     1. The Final project was the idea of the creating a simple VSM microprocessor and every student in the class picked a different component that would hopefully be integrated together to create VSM microprocessor that is a very simple microprocessor. For my final project I attempted to create a successfully working Counter16 component that uses a And gate, 4 D Flip Flops, and Inverter gates. Given a ElectricVLSI template with all of the components needed to create the Counter16 I thought creating the Counter16 would be easier to implement than it actually turned out to be while trying to implement the Counter16. This implementation gave me an idea and realized how difficult it is to actually create even single components and it takes a lot of time effort and patience to implement VLSI projects.
 ## Schematics <a name="Schematics"></a>
    1. This section shows the Schematics of the And gate, Inverter gate, D Flip Flop, and Counter16. I used the mudlib ElectricVLSI template that had the And gate, Inverter gate, and D Flip Flop. The specific group of components I used are and2_1x, flopr_c_1x, and inv_1x. The Counter16 utilizes all these different components from the template and integrates them together to make the Counter16 described in much detail below. 
