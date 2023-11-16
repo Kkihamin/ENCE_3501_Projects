@@ -125,11 +125,19 @@ During the simulations, I faced difficulties, particularly with the D Flip Flop 
 
 
 ## Counter16 <a name="Counter16"></a>
-   1. 
+   1. Figure 14 below shows the simulation of the Counter16 for the schematic and Figure 15 below shows the simulation of the Counter16 for the layout and when I simulated both the schematic and layout I saw that they looked exactly the same and the simulations matched each other. There were a lot of difficulties getting the simulations to work like from simple errors like the text file not reading to like complex issues that involved rewiring the schematic and layout multiple times to make it more efficient, clean, and functional.
+
+      <img width="1263" alt="Counter_16_sim" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/41a4caab-32f0-4fed-8a0c-6da8be337dc8">
+
+      Figure 14: Simulation of Counter16 in Schematic
+
+      <img width="1269" alt="Counter_16_layout" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d7e288bf-8579-4d32-bef9-b65e6db5e01a">
+
+      Figure 15: Simulation of Counter16 in Layout
 ## Challenges <a name="Challenges"></a>
-   1. 
+   1. There were various challenges in creating the Counter16 which were having to rewire the schematic and layout. For example, I had to completely rewire the schematic because the initial schematic I had wired was incorrect and it was not similar to the Logisim schematic provided in the Final project document. The second time I had to rewire because the Counter16 had errors simulationing because there were floating wires and I had to rewire the entire schematic to figure out the issue. Third time was to fix the simulation because it was not displaying the correct waveform and was fixed by adding an additional inverter to the output of the And gate. The last time wiring was to wire the schematic in a way that made the schematic look more organized and easier to read. The layout was done several times as well because I wired the layout of the components together in the most inefficient way initially so that when I was done wiring the wires were very long and all over the place and I was not able to wire the Vdd's and gnd's all together and got the error of floating voltages and grounds. So I restarted the layout from scratch wiring the vdd's and gnd's together before wiring everything else together and this time it did not create errors but it was definitely a time consuming process but I feel like it was totally worth it.
 ## Future Plans <a name="Future Plans"></a>
-   1.
+   1. My future plans is I might try to implement the other components in my free time just for fun and I feel like that would make me more familiar with ElectricVLSI and discover things that I may have never known about the software.
 
 
  
