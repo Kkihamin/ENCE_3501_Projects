@@ -93,10 +93,18 @@ Figure 4: Schematic of Counter16
 
       Figure 8: Layout of Counter16
 ## Simulations <a name="Simulations"></a>
-   1. This section shows the Simulations of the 3-Charge Pump, Ring Oscillator, and Regulator. The simulations are only from the schematic for the 3-charge pump, ring oscillator, and the        regulator but there is no simulation for the DC-to-DC Converter due to lack of time and focusing more on the final project. The layout simulations did not work so I was kind of 
-      frustrated because there were so many errors and I was overwhelmed but I was not able to figure out why the simulations for the layouts were not working.
+   1. In the simulation section, I encountered challenges while simulating various digital circuits, including the And gate, Inverter gate, D Flip Flop, and Counter16. To validate the accuracy of the D Flip Flop simulation, I performed a comparative analysis using Falstad.
+During the simulations, I faced difficulties, particularly with the D Flip Flop and Counter16. In the case of the D Flip Flop, comparing the simulation results with Falstad was crucial to ensure the accuracy of the simulation. For the Counter16 simulation, overcoming obstacles proved to be more challenging. One notable issue was the absence of the "cmosedu_models.txt" file. I successfully resolved this issue by configuring the Spice models to P_1u or N_1u depending on the transistor type.
 ## And gate <a name="And gate"></a>
-   1.
+   1. Figure 9 below shows the truth table characteristics of the And gate and Figure 10 below shows the switching voltage point of the And gate. As you can see from the truth table characteristics of the And gate I can see that the input of a rises from 0 volts to 5 volts but the input of b and output y are offsetted graphs of the waveform of a. From the voltage switching point waveform you can see that the output waveform kind of levels off and eventually stops at the vdd which is 5 volts.
+
+   <img width="1272" alt="And_simulation" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/42604efe-13f3-4c0b-8016-d01e08be8083">
+
+   Figure 9: And Gate Truth Table characteristics Waveforms
+
+   <img width="1274" alt="And_switching point" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/89bb33e9-1a45-4705-bbef-1eb613856f68">
+
+   Figure 10: And Gate Voltage Switching Point Waveforms
 ## Inverter <a name="Inverter"></a>
    1. 
 ## D Flip Flop <a name="D Flip Flop"></a>
