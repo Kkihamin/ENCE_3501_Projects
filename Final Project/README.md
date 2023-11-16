@@ -64,14 +64,33 @@ Figure 3: Schematic of D Flip Flop
 
 Figure 4: Schematic of Counter16
 ## Layout <a name="Layout"></a>
-   1. 
+   1.  This section contains the Layouts of the And gate, Inverter gate, D Flip Flop, and Counter16. The difficulties with the layout is figuring out how each of the individual components like the And gate, Inverter gate, and D Flip Flop work to be able to combine them together to make the Counter16. There were many iterations done to the layout especially the Counter16 because there were many errors like the wiring was not done correctly, missing exports, not very organized, and more. The layout of the Counter16 was the biggest and most complex layout I have done so far.
 ## And gate <a name="And gate"></a>
-   1. 
+   1. Figure 5 below shows the layout of the And gate which is used in the Counter16. The And gate is used in the Counter16 to feed two inputs which are the clk and Ena which are related to the two clocks. This And gate below is used from the mudlib template for the component and2_1x and was already created for me to use.
+      <img width="431" alt="And_gate" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/edd1d38f-4364-495d-9072-9aa0787d6f37">
+
+      Figure 5: Layout of And Gate
+
 ## Inverter <a name="Inverter"></a>
-   1. 
+   1. Figure 6 below shows the layout of the Inverter gate which is used in the Counter16. The inverter is used to connect to the four D Flip Flops and another way the Inverter gate is used is to invert the clock input compared to the other clock. This Inverter gate below is used from the mudlib template for the component inv_1x and was created to make the Counter16 easier to create to a certain point.
+      
+      <img width="502" alt="Inverter_gate" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d833282c-ec5b-497d-9cae-3c2d97ad5cd2">
+
+      Figure 6: Layout of Inverter Gate
+
 ## D Flip Flop <a name="D Flip Flop"></a>
+   1.  Figure 7 below shows the layout of the D Flip Flop which is used in the Counter16. There are four D Flip Flop used in the Counter16. The four D Flip Flop used in the Counter16 make the Counter16 able to count up or down based on the pulses of the clocks. The four D Flip Flops are used from the mudlib template for the component flopr_c_1x and provided to make the Counter16 able to be created because if the D Flip Flop needed to be created from scratch it would of definitely been harder to implement the Counter16 in the given limited time.
+
+      <img width="781" alt="D Flip Flop" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/46631c89-a792-49e9-acd5-942823e22f97">
+
+      Figure 7: Layout of D Flip Flop
+
 ## Counter16 <a name="Counter16"></a>
-   1.
+   1. Figure 8 below shows the layout of the Counter16. The Counter16 was created by using four D Flip Flops, five Inverter gates, one And gate from the mudlib template provided with the layouts and schematics so I could just drag in the layouts of the different components needed to create the Counter16 and then wire all the components based on the schematic I created for the Counter16. This layout was the most difficult because if I needed to make changes to the schematic which I did then the layout would need to be redone from the very beginning. I made various edits to the schematic and layout about three or four times so the layout of Counter16 was done through various iterations.
+
+      <img width="814" alt="Counter_16" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/19f22888-92d7-43d5-93ad-0d5726228412">
+
+      Figure 8: Layout of Counter16
 ## Simulations <a name="Simulations"></a>
    1. This section shows the Simulations of the 3-Charge Pump, Ring Oscillator, and Regulator. The simulations are only from the schematic for the 3-charge pump, ring oscillator, and the        regulator but there is no simulation for the DC-to-DC Converter due to lack of time and focusing more on the final project. The layout simulations did not work so I was kind of 
       frustrated because there were so many errors and I was overwhelmed but I was not able to figure out why the simulations for the layouts were not working.
