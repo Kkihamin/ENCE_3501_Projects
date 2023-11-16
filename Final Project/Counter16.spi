@@ -1,85 +1,78 @@
-*** SPICE deck for cell Counter16{sch} from library Counter_16
-*** Created on Mon Nov 13, 2023 10:10:43
-*** Last revised on Wed Nov 15, 2023 19:02:38
-*** Written on Wed Nov 15, 2023 19:06:15 by Electric VLSI Design System, version 9.07
+*** SPICE deck for cell Counter16{lay} from library Counter_16
+*** Created on Mon Nov 13, 2023 11:33:39
+*** Last revised on Wed Nov 15, 2023 23:20:31
+*** Written on Wed Nov 15, 2023 23:26:47 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
 
-*** SUBCIRCUIT Counter_16__and2_1x FROM CELL and2_1x{sch}
-.SUBCKT Counter_16__and2_1x a b y
-** GLOBAL 0
-** GLOBAL vdd
-Mnmos_0 net_2 b net_1 0 N_1u L=0.6U W=1.8U
-Mnmos_1 net_1 a 0 0 N_1u L=0.6U W=1.8U
-Mnmos_2 y net_2 0 0 N_1u L=0.6U W=2.1U
-Mpmos_0 vdd b net_2 vdd P_1u L=0.6U W=1.8U
-Mpmos_1 vdd a net_2 vdd P_1u L=0.6U W=1.8U
-Mpmos_2 vdd net_2 y vdd P_1u L=0.6U W=3U
+*** SUBCIRCUIT Counter_16__and2_1x FROM CELL and2_1x{lay}
+.SUBCKT Counter_16__and2_1x 0 a b vdd y
+Mnmos_0 net_72 a 0 0 N_1u L=0.6U W=1.8U AS=4.725P AD=1.148P PS=13.5U PD=3.45U
+Mnmos_1 net_73 b net_72 0 N_1u L=0.6U W=1.8U AS=1.148P AD=1.98P PS=3.45U PD=4.6U
+Mnmos_2 0 net_73 y 0 N_1u L=0.6U W=2.1U AS=3.825P AD=4.725P PS=8.1U PD=13.5U
+Mpmos_0 net_73 a vdd vdd P_1u L=0.6U W=1.8U AS=4.5P AD=1.98P PS=11.8U PD=4.6U
+Mpmos_1 vdd b net_73 vdd P_1u L=0.6U W=1.8U AS=1.98P AD=4.5P PS=4.6U PD=11.8U
+Mpmos_2 vdd net_73 y vdd P_1u L=0.6U W=3U AS=3.825P AD=4.5P PS=8.1U PD=11.8U
 .ENDS Counter_16__and2_1x
 
-*** SUBCIRCUIT Counter_16__flopr_c_1x FROM CELL flopr_c_1x{sch}
-.SUBCKT Counter_16__flopr_c_1x d ph1 ph2 q resetb
-** GLOBAL 0
-** GLOBAL vdd
-Mnmos_2 masterb ph2buf masterinb 0 N_1u L=0.6U W=1.8U
-Mnmos_3 master masterb 0 0 N_1u L=0.6U W=1.8U
-Mnmos_4 slave ph1buf master 0 N_1u L=0.6U W=1.8U
-Mnmos_5 masterb ph2b n6 0 N_1u L=0.6U W=1.2U
-Mnmos_6 n6 master 0 0 N_1u L=0.6U W=1.2U
-Mnmos_7 n8 slaveb 0 0 N_1u L=0.6U W=1.2U
-Mnmos_8 slaveb slave 0 0 N_1u L=0.6U W=1.8U
-Mnmos_10 slave ph1b n8 0 N_1u L=0.6U W=1.2U
-Mnmos_11 q slaveb 0 0 N_1u L=0.6U W=2.1U
-Mnmos_17 net_429 resetb 0 0 N_1u L=0.6U W=7.2U
-Mnmos_19 masterinb d net_429 0 N_1u L=0.6U W=1.8U
-Mnmos_22 ph2b ph2 0 0 N_1u L=0.6U W=1.8U
-Mnmos_25 ph2buf ph2b 0 0 N_1u L=0.6U W=1.8U
-Mnmos_26 ph1buf ph1b 0 0 N_1u L=0.6U W=1.8U
-Mnmos_27 ph1b ph1 0 0 N_1u L=0.6U W=1.8U
-Mpmos_2 masterinb ph2b masterb vdd P_1u L=0.6U W=1.8U
-Mpmos_3 vdd masterb master vdd P_1u L=0.6U W=2.7U
-Mpmos_4 master ph1b slave vdd P_1u L=0.6U W=1.8U
-Mpmos_5 n7 ph2buf masterb vdd P_1u L=0.6U W=1.2U
-Mpmos_6 vdd master n7 vdd P_1u L=0.6U W=1.2U
-Mpmos_7 vdd slaveb n9 vdd P_1u L=0.6U W=1.2U
-Mpmos_8 vdd slave slaveb vdd P_1u L=0.6U W=2.7U
-Mpmos_10 n9 ph1buf slave vdd P_1u L=0.6U W=1.2U
-Mpmos_11 vdd slaveb q vdd P_1u L=0.6U W=3U
-Mpmos_16 vdd d masterinb vdd P_1u L=0.6U W=3.6U
-Mpmos_18 vdd resetb masterinb vdd P_1u L=0.6U W=1.8U
-Mpmos_21 vdd ph1 ph1b vdd P_1u L=0.6U W=2.7U
-Mpmos_22 vdd ph2 ph2b vdd P_1u L=0.6U W=2.7U
-Mpmos_24 vdd ph1b ph1buf vdd P_1u L=0.6U W=2.7U
-Mpmos_25 vdd ph2b ph2buf vdd P_1u L=0.6U W=2.7U
+*** SUBCIRCUIT Counter_16__flopr_c_1x FROM CELL flopr_c_1x{lay}
+.SUBCKT Counter_16__flopr_c_1x 0 d ph1 ph2 q resetb vdd
+Mnmos_0 net_766 resetb 0 0 N_1u L=0.6U W=7.2U AS=5.778P AD=5.67P PS=15.57U PD=9U
+Mnmos_2 masterinb d net_766 0 N_1u L=0.6U W=1.8U AS=5.67P AD=3.24P PS=9U PD=7.32U
+Mnmos_12 0 ph2 net_300 0 N_1u L=0.6U W=1.8U AS=3.375P AD=5.778P PS=7.5U PD=15.57U
+Mnmos_14 net_430 net_300 0 0 N_1u L=0.6U W=1.8U AS=5.778P AD=3.375P PS=15.57U PD=7.5U
+Mnmos_16 0 ph1b ph1buf 0 N_1u L=0.6U W=1.8U AS=3.375P AD=5.778P PS=7.5U PD=15.57U
+Mnmos_18 masterb net_430 masterinb 0 N_1u L=0.6U W=1.8U AS=3.24P AD=1.53P PS=7.32U PD=3.6U
+Mnmos_19 net_498 net_300 masterb 0 N_1u L=0.6U W=1.2U AS=1.53P AD=0.9P PS=3.6U PD=2.7U
+Mnmos_20 0 master net_498 0 N_1u L=0.6U W=1.2U AS=0.9P AD=5.778P PS=2.7U PD=15.57U
+Mnmos_21 master masterb 0 0 N_1u L=0.6U W=1.8U AS=5.778P AD=1.958P PS=15.57U PD=4.05U
+Mnmos_22 slave ph1buf master 0 N_1u L=0.6U W=1.8U AS=1.958P AD=1.53P PS=4.05U PD=3.6U
+Mnmos_23 net_552 ph1b slave 0 N_1u L=0.6U W=1.2U AS=1.53P AD=0.9P PS=3.6U PD=2.7U
+Mnmos_24 0 slaveb net_552 0 N_1u L=0.6U W=1.2U AS=0.9P AD=5.778P PS=2.7U PD=15.57U
+Mnmos_25 slaveb slave 0 0 N_1u L=0.6U W=1.8U AS=5.778P AD=3.375P PS=15.57U PD=7.5U
+Mnmos_26 q slaveb 0 0 N_1u L=0.6U W=2.1U AS=5.778P AD=3.825P PS=15.57U PD=8.1U
+Mnmos_27 ph1b ph1 0 0 N_1u L=0.6U W=1.8U AS=5.778P AD=3.375P PS=15.57U PD=7.5U
+Mpmos_2 vdd d masterinb vdd P_1u L=0.6U W=3.6U AS=3.24P AD=5.707P PS=7.32U PD=14.536U
+Mpmos_6 masterinb resetb vdd vdd P_1u L=0.6U W=1.8U AS=5.707P AD=3.24P PS=14.536U PD=7.32U
+Mpmos_12 vdd ph2 net_300 vdd P_1u L=0.6U W=2.7U AS=3.375P AD=5.707P PS=7.5U PD=14.536U
+Mpmos_13 net_430 net_300 vdd vdd P_1u L=0.6U W=2.7U AS=5.707P AD=3.375P PS=14.536U PD=7.5U
+Mpmos_14 vdd ph1b ph1buf vdd P_1u L=0.6U W=2.7U AS=3.375P AD=5.707P PS=7.5U PD=14.536U
+Mpmos_17 masterb net_300 masterinb vdd P_1u L=0.6U W=1.8U AS=3.24P AD=1.53P PS=7.32U PD=3.6U
+Mpmos_18 net_502 net_430 masterb vdd P_1u L=0.6U W=1.2U AS=1.53P AD=0.9P PS=3.6U PD=2.7U
+Mpmos_19 vdd master net_502 vdd P_1u L=0.6U W=1.2U AS=0.9P AD=5.707P PS=2.7U PD=14.536U
+Mpmos_20 master masterb vdd vdd P_1u L=0.6U W=2.7U AS=5.707P AD=1.958P PS=14.536U PD=4.05U
+Mpmos_21 slave ph1b master vdd P_1u L=0.6U W=1.8U AS=1.958P AD=1.53P PS=4.05U PD=3.6U
+Mpmos_22 net_555 ph1buf slave vdd P_1u L=0.6U W=1.2U AS=1.53P AD=0.9P PS=3.6U PD=2.7U
+Mpmos_23 vdd slaveb net_555 vdd P_1u L=0.6U W=1.2U AS=0.9P AD=5.707P PS=2.7U PD=14.536U
+Mpmos_24 slaveb slave vdd vdd P_1u L=0.6U W=2.7U AS=5.707P AD=3.375P PS=14.536U PD=7.5U
+Mpmos_25 q slaveb vdd vdd P_1u L=0.6U W=3U AS=5.707P AD=3.825P PS=14.536U PD=8.1U
+Mpmos_26 ph1b ph1 vdd vdd P_1u L=0.6U W=2.7U AS=5.707P AD=3.375P PS=14.536U PD=7.5U
 .ENDS Counter_16__flopr_c_1x
 
-*** SUBCIRCUIT Counter_16__inv_1x FROM CELL inv_1x{sch}
-.SUBCKT Counter_16__inv_1x a y
-** GLOBAL 0
-** GLOBAL vdd
-Mnmos_0 y a 0 0 N_1u L=0.6U W=2.1U
-Mpmos_0 vdd a y vdd P_1u L=0.6U W=3U
+*** SUBCIRCUIT Counter_16__inv_1x FROM CELL inv_1x{lay}
+.SUBCKT Counter_16__inv_1x 0 a vdd y
+Mnmos_0 y a 0 0 N_1u L=0.6U W=2.1U AS=6.03P AD=3.825P PS=16.8U PD=8.1U
+Mpmos_0 y a vdd vdd P_1u L=0.6U W=3U AS=7.38P AD=3.825P PS=18.6U PD=8.1U
 .ENDS Counter_16__inv_1x
 
-.global 0 vdd
+*** TOP LEVEL CELL: Counter16{lay}
+Xand2_1x_2 0 clk Ena vdd net_216 Counter_16__and2_1x
+Xflopr_c__4 0 net_202 net_216 net_219 Counter[0] Rst vdd Counter_16__flopr_c_1x
+Xflopr_c__5 0 net_343 net_202 Counter[0] Counter[1] Rst vdd Counter_16__flopr_c_1x
+Xflopr_c__6 0 net_367 net_343 Counter[1] Counter[2] Rst vdd Counter_16__flopr_c_1x
+Xflopr_c__7 0 Counter[3] net_367 Counter[2] net_379 Rst vdd Counter_16__flopr_c_1x
+Xinv_1x_6 0 net_216 vdd net_219 Counter_16__inv_1x
+Xinv_1x_7 0 Counter[0] vdd net_202 Counter_16__inv_1x
+Xinv_1x_9 0 Counter[1] vdd net_343 Counter_16__inv_1x
+Xinv_1x_10 0 Counter[2] vdd net_367 Counter_16__inv_1x
+Xinv_1x_11 0 net_379 vdd Counter[3] Counter_16__inv_1x
 
-*** TOP LEVEL CELL: Counter16{sch}
-Xand2_1x_0 clk Ena C1 Counter_16__and2_1x
-Xflopr_c__4 net_100 C1 C2 Counter[0] Rst Counter_16__flopr_c_1x
-Xflopr_c__5 net_119 net_100 Counter[0] Counter[1] Rst Counter_16__flopr_c_1x
-Xflopr_c__6 net_136 net_119 Counter[1] Counter[2] Rst Counter_16__flopr_c_1x
-Xflopr_c__7 Counter[3] net_136 Counter[2] net_148 Rst Counter_16__flopr_c_1x
-Xinv_1x_1 Counter[0] net_100 Counter_16__inv_1x
-Xinv_1x_2 Counter[1] net_119 Counter_16__inv_1x
-Xinv_1x_3 Counter[2] net_136 Counter_16__inv_1x
-Xinv_1x_4 net_148 Counter[3] Counter_16__inv_1x
-Xinv_1x_5 C1 C2 Counter_16__inv_1x
-
-* Spice Code nodes in cell cell 'Counter16{sch}'
+* Spice Code nodes in cell cell 'Counter16{lay}'
 vdd vdd 0 dc 5
 vclk clk 0 pulse(0v 5v 0 1n 1n 10n 20n)
 VEna Ena Counter[0] dc 5
 VRst Rst 0 dc 5
 .tran 0 100m
+.include cmosedu_models.txt
 .include cmosedu_models.txt
 .END
