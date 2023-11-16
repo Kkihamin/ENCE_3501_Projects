@@ -41,19 +41,21 @@
 
 
        Figure 1: Schematic of And Gate
-## Ring_Oscillator <a name="Ring_Oscillator"></a>
-   1. The first I did before creating the schematic of Ring_Oscillator was to import one NAND, and four Not gates from a previous lab where I had already created a NAND and Not gate. Next, I changed all the spice models for the transistors on the NAND and Not schematic to N_50n and P_50n based on the special purpose CMOS text file. Then, I got 3 10uF poly 1 to poly 2 capacitors and I did not change the size of the poly capacitors because I knew the size of the capacitors changed on the schematic would need to be reflected in the layout and would take a lot more time and I wanted to focus more on the final project. Finally, wire all the components together using the Lab 6 intro document like the sample circuit of the Ring_Oscillator given in the document. Figure 3 below shows the schematic of the Ring_Oscillator circuit.
+## Inverter <a name="Inverter"></a>
+   1. The first I did was open up the mudlib library template with all the components necessary for the final project on ElectricVLSI. Next, I scrolled down till I got to all the different Inverter gates and I specifically picked inv_1x because for the Counter16 I had a one input inverter gate with one output which this specific template satisfies the requirements for the Counter16. Then I right clicked on the cell and then hit copy and then I copied the entire cell group to my counter16 project. Finally, I set spice models for all the PMOS and NMOS transistors to P_1u or N_1u based on the cmosedu_models.txt file since I was using vdd as 5 volts. Figure 2 below shows the schematic of the inverter gate that I used.
       
-      <img width="843" alt="Ring_Oscillator" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/bce7b774-e8e9-4e12-8bf1-8ba05866fb53">
+      <img width="728" alt="Inverter_gate" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/ceed5eff-256f-49ff-b4b3-8126a5f877ae">
 
 
-      Figure 3: Schematic of Ring_Oscillator
-## Regulator <a name="Regulator"></a>
-   1. The first I did before creating the schematic of Regulator was calculate the width and length. I used the equation $\(L div W) * Rsquare\$ and for this equation I realized that I needed to either assume the length or width to get the other dimension so I decided the length to be 200 and I knew the Rsquare was equal to 835 from previous assignments and looking back at my notes so I multiplied 835 by 200 which equals to 20M. Next, I divided 20M and 167,000 to get a width of 119.76. I used the equation $\(L div W) * Rsquare\$ for the second resistor as well and for this equation I realized that I needed to either assume the length or width to get the other dimension so I decided the length to be 50 and I knew the Rsquare was equal to 835 from previous assignments and looking back at my notes so I multiplied 835 by 50 which equals to 3M. Next, I divided 3M and 41,750 to get a width of 71.895. Then, I looked at the special cmos text file to decide what the spice model for the NMOS and PMOS should be based on whether the vdd is 1V or 5V which in this case we are using 1V which makes the spice model N_50n and P_50n. Then, I used 2 PMOS transistors with width of 20 and a length of 40, 1 NMOS transistor with a width of 20 and a length of 2, 2 inverter gates used as a icon, and 2 N-well resistor one which is 20M and the other one being 3M. Finally, wire all the components together using the Lab 6 intro document like the sample circuit of the Regulator given in the document. Figure 4 below shows the schematic of the Regulator circuit.
+
+      Figure 2: Schematic of Inverter Gate
+## D Flip Flop <a name="D Flip Flop"></a>
+   1. The first I did was open up the mudlib library template with all the components necessary for the final project on ElectricVLSI. Next, I scrolled down till I got to all the different D flip flops and I specifically picked flopr_c_1x because for the Counter16 I had two clocks, one reset on the bottom, input d and output q and this template was the only one that satisfied the requirements for the Counter16. Then I right clicked on the cell and then hit copy and then I copied the entire cell group to my counter16 project. Then, when I ran F5 to check if there were errors I did in fact get errors which was the ph1 and ph2 had characteristics of a clock but on the icon the ph1 and ph2 had characteristics that were unknown and ElectricVLSI was getting confused because the characteristics of ph1 and ph2 being clocks on the schematic did not match on the icon. Finally, I set spice models for all the PMOS and NMOS transistors to P_1u or N_1u based on the cmosedu_models.txt file since I was using vdd as 5 volts. Figure 3 below shows the schematic of the D Flip Flop that I used.
       
-<img width="838" alt="Regulator" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/126c1814-1889-4a57-a488-edac87302a41">
+<img width="665" alt="D flip flop" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/90630b70-95b1-44e1-aa6c-5f07668bbb7e">
 
-Figure 4: Schematic of Regulator Circuit
+
+Figure 3: Schematic of D Flip Flop
 ## DC-DC Converter <a name="DC-DC Converter"></a>
    1. The schematic of the DC-DC converter is shown below in Figure 5 but I did not take the time to simulate the DC-DC converter because it did not actually work on my end and I did not want to spend too much time trying to figure why the DC-DC Converter simulations were not working and I wanted to focus more on the final project. If I did not have a final project I would of tried to figure out how to simulate the DC-DC Converter.
       
