@@ -59,7 +59,8 @@ Figure 3: Schematic of D Flip Flop
 ## Counter16 <a name="Counter16"></a>
    1. The schematic of the Counter16 was created from icons of one And gate, four D Flip Flops, and five inverter gates. Initially the And gate with inputs Ena and clk are connected to a inverter gate with a wire C1 which would be the ph1 which is just the clock and the output C2 which is the inverse of the clock ph1 which is what ph2 would be. Then, for every flip flop there would be a inverter where the output of the inverter would feed into the input d and connected to the ph1 of the next flip flop and the input of the inverter would be the output q and connected to ph2 of the next flip flop. Figure 4 below shows the schematic of the Counter16.
       
-<img width="837" alt="counter_16" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/04f06673-ea30-4b6f-aab2-b3933b09a6b2">
+<img width="837" alt="counter_16" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/a3c2ee25-967f-4255-b463-45a0e29cf2f6">
+
 
 
 Figure 4: Schematic of Counter16
