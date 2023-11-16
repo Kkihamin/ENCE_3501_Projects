@@ -113,7 +113,17 @@ During the simulations, I faced difficulties, particularly with the D Flip Flop 
       Figure 11: Inverter Voltage Switching point
 
 ## D Flip Flop <a name="D Flip Flop"></a>
-   1. 
+   1. Figure 12 below shows the simulation of D Flip Flop with the input d, output q, clock, and the reset even though the reset was not shown because I just saw a straight line at 5 volts and I thought the reset was not working so I did not include it. The hardest part of the D Flip Flop was figuring out the spice code especially to display the clock correctly. Also, a bit of research on how the D Flip Flop needed to work was necessary. Figure 13 below shows a truth table of the D Flip Flop that I used to kind of understand the behavior of the D Flip Flop from the internet.
+
+      <img width="1273" alt="Flip Flop_truthtables" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/e426db88-a628-46fd-a852-78eaf2f56c86">
+
+      Figure 12: Simulation of D Flip Flop
+
+      ![Truth Table](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7b312048-3ae9-45ed-9eb8-c6a7033c533b)
+
+      Figure 13: D Flip Flop Truth Table
+
+
 ## Counter16 <a name="Counter16"></a>
    1. 
 ## Challenges <a name="Challenges"></a>
