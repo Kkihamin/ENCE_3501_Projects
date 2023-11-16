@@ -81,7 +81,7 @@ Figure 4: Schematic of Counter16
 ## D Flip Flop <a name="D Flip Flop"></a>
    1.  Figure 7 below shows the layout of the D Flip Flop which is used in the Counter16. There are four D Flip Flop used in the Counter16. The four D Flip Flop used in the Counter16 make the Counter16 able to count up or down based on the pulses of the clocks. The four D Flip Flops are used from the mudlib template for the component flopr_c_1x and provided to make the Counter16 able to be created because if the D Flip Flop needed to be created from scratch it would of definitely been harder to implement the Counter16 in the given limited time.
 
-   <img width="781" alt="D Flip Flop" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/46631c89-a792-49e9-acd5-942823e22f97">
+<img width="781" alt="D Flip Flop" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/46631c89-a792-49e9-acd5-942823e22f97">
 
       Figure 7: Layout of D Flip Flop
 
