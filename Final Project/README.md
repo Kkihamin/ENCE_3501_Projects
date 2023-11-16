@@ -85,7 +85,7 @@ Figure 4: Schematic of Counter16
 
 <img width="781" alt="D Flip Flop" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/46631c89-a792-49e9-acd5-942823e22f97">
 
-    Figure 7: Layout of D Flip Flop
+   Figure 7: Layout of D Flip Flop
 
 ## Counter16 <a name="Counter16"></a>
    1. Figure 8 below shows the layout of the Counter16. The Counter16 was created by using four D Flip Flops, five Inverter gates, one And gate from the mudlib template provided with the layouts and schematics so I could just drag in the layouts of the different components needed to create the Counter16 and then wire all the components based on the schematic I created for the Counter16. This layout was the most difficult because if I needed to make changes to the schematic which I did then the layout would need to be redone from the very beginning. I made various edits to the schematic and layout about three or four times so the layout of Counter16 was done through various iterations.
