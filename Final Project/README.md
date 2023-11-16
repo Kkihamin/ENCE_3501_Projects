@@ -106,7 +106,12 @@ During the simulations, I faced difficulties, particularly with the D Flip Flop 
 
    Figure 10: And Gate Voltage Switching Point Waveforms
 ## Inverter <a name="Inverter"></a>
-   1. 
+   1. Figure 11 below shows the switching voltage point of the Inverter gate and the switching point of the Inverter gate was determined using resources from the slides and previous lab assignments when I got stuck or could not remember. The Inverter switching point was used to identify the characteristics of the Inverter gate especially since the component inv_1x was created and needed to verify if the Inverter was functioning the way it is suppose to and pick a different component from the mudlib template if necessry.
+
+      <img width="1274" alt="Inverter_sim" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/5c7edda0-8e26-4c29-b318-763e83818dc6">
+
+      Figure 11: Inverter Voltage Switching point
+
 ## D Flip Flop <a name="D Flip Flop"></a>
    1. 
 ## Counter16 <a name="Counter16"></a>
