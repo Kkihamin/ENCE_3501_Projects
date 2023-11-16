@@ -1,0 +1,85 @@
+*** SPICE deck for cell Counter16{sch} from library Counter_16
+*** Created on Mon Nov 13, 2023 10:10:43
+*** Last revised on Wed Nov 15, 2023 19:02:38
+*** Written on Wed Nov 15, 2023 19:06:15 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Counter_16__and2_1x FROM CELL and2_1x{sch}
+.SUBCKT Counter_16__and2_1x a b y
+** GLOBAL 0
+** GLOBAL vdd
+Mnmos_0 net_2 b net_1 0 N_1u L=0.6U W=1.8U
+Mnmos_1 net_1 a 0 0 N_1u L=0.6U W=1.8U
+Mnmos_2 y net_2 0 0 N_1u L=0.6U W=2.1U
+Mpmos_0 vdd b net_2 vdd P_1u L=0.6U W=1.8U
+Mpmos_1 vdd a net_2 vdd P_1u L=0.6U W=1.8U
+Mpmos_2 vdd net_2 y vdd P_1u L=0.6U W=3U
+.ENDS Counter_16__and2_1x
+
+*** SUBCIRCUIT Counter_16__flopr_c_1x FROM CELL flopr_c_1x{sch}
+.SUBCKT Counter_16__flopr_c_1x d ph1 ph2 q resetb
+** GLOBAL 0
+** GLOBAL vdd
+Mnmos_2 masterb ph2buf masterinb 0 N_1u L=0.6U W=1.8U
+Mnmos_3 master masterb 0 0 N_1u L=0.6U W=1.8U
+Mnmos_4 slave ph1buf master 0 N_1u L=0.6U W=1.8U
+Mnmos_5 masterb ph2b n6 0 N_1u L=0.6U W=1.2U
+Mnmos_6 n6 master 0 0 N_1u L=0.6U W=1.2U
+Mnmos_7 n8 slaveb 0 0 N_1u L=0.6U W=1.2U
+Mnmos_8 slaveb slave 0 0 N_1u L=0.6U W=1.8U
+Mnmos_10 slave ph1b n8 0 N_1u L=0.6U W=1.2U
+Mnmos_11 q slaveb 0 0 N_1u L=0.6U W=2.1U
+Mnmos_17 net_429 resetb 0 0 N_1u L=0.6U W=7.2U
+Mnmos_19 masterinb d net_429 0 N_1u L=0.6U W=1.8U
+Mnmos_22 ph2b ph2 0 0 N_1u L=0.6U W=1.8U
+Mnmos_25 ph2buf ph2b 0 0 N_1u L=0.6U W=1.8U
+Mnmos_26 ph1buf ph1b 0 0 N_1u L=0.6U W=1.8U
+Mnmos_27 ph1b ph1 0 0 N_1u L=0.6U W=1.8U
+Mpmos_2 masterinb ph2b masterb vdd P_1u L=0.6U W=1.8U
+Mpmos_3 vdd masterb master vdd P_1u L=0.6U W=2.7U
+Mpmos_4 master ph1b slave vdd P_1u L=0.6U W=1.8U
+Mpmos_5 n7 ph2buf masterb vdd P_1u L=0.6U W=1.2U
+Mpmos_6 vdd master n7 vdd P_1u L=0.6U W=1.2U
+Mpmos_7 vdd slaveb n9 vdd P_1u L=0.6U W=1.2U
+Mpmos_8 vdd slave slaveb vdd P_1u L=0.6U W=2.7U
+Mpmos_10 n9 ph1buf slave vdd P_1u L=0.6U W=1.2U
+Mpmos_11 vdd slaveb q vdd P_1u L=0.6U W=3U
+Mpmos_16 vdd d masterinb vdd P_1u L=0.6U W=3.6U
+Mpmos_18 vdd resetb masterinb vdd P_1u L=0.6U W=1.8U
+Mpmos_21 vdd ph1 ph1b vdd P_1u L=0.6U W=2.7U
+Mpmos_22 vdd ph2 ph2b vdd P_1u L=0.6U W=2.7U
+Mpmos_24 vdd ph1b ph1buf vdd P_1u L=0.6U W=2.7U
+Mpmos_25 vdd ph2b ph2buf vdd P_1u L=0.6U W=2.7U
+.ENDS Counter_16__flopr_c_1x
+
+*** SUBCIRCUIT Counter_16__inv_1x FROM CELL inv_1x{sch}
+.SUBCKT Counter_16__inv_1x a y
+** GLOBAL 0
+** GLOBAL vdd
+Mnmos_0 y a 0 0 N_1u L=0.6U W=2.1U
+Mpmos_0 vdd a y vdd P_1u L=0.6U W=3U
+.ENDS Counter_16__inv_1x
+
+.global 0 vdd
+
+*** TOP LEVEL CELL: Counter16{sch}
+Xand2_1x_0 clk Ena C1 Counter_16__and2_1x
+Xflopr_c__4 net_100 C1 C2 Counter[0] Rst Counter_16__flopr_c_1x
+Xflopr_c__5 net_119 net_100 Counter[0] Counter[1] Rst Counter_16__flopr_c_1x
+Xflopr_c__6 net_136 net_119 Counter[1] Counter[2] Rst Counter_16__flopr_c_1x
+Xflopr_c__7 Counter[3] net_136 Counter[2] net_148 Rst Counter_16__flopr_c_1x
+Xinv_1x_1 Counter[0] net_100 Counter_16__inv_1x
+Xinv_1x_2 Counter[1] net_119 Counter_16__inv_1x
+Xinv_1x_3 Counter[2] net_136 Counter_16__inv_1x
+Xinv_1x_4 net_148 Counter[3] Counter_16__inv_1x
+Xinv_1x_5 C1 C2 Counter_16__inv_1x
+
+* Spice Code nodes in cell cell 'Counter16{sch}'
+vdd vdd 0 dc 5
+vclk clk 0 pulse(0v 5v 0 1n 1n 10n 20n)
+VEna Ena Counter[0] dc 5
+VRst Rst 0 dc 5
+.tran 0 100m
+.include cmosedu_models.txt
+.END
