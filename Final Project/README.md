@@ -122,8 +122,6 @@ During the simulations, I faced difficulties, particularly with the D Flip Flop 
       ![Truth Table](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7b312048-3ae9-45ed-9eb8-c6a7033c533b)
 
       Figure 13: D Flip Flop Truth Table
-
-
 ## Counter16 <a name="Counter16"></a>
    1. Figure 14 below shows the simulation of the Counter16 for the schematic and Figure 15 below shows the simulation of the Counter16 for the layout and when I simulated both the schematic and layout I saw that they looked exactly the same and the simulations matched each other. There were a lot of difficulties getting the simulations to work like from simple errors like the text file not reading to like complex issues that involved rewiring the schematic and layout multiple times to make it more efficient, clean, and functional.
 
