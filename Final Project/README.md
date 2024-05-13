@@ -30,7 +30,7 @@
    
    4.[Counter16](#Counter16)
 ## Introduction <a name="introduction"></a>
-    1. The Final project was the idea of the creating a simple VSM microprocessor and every student in the class picked a different component that would hopefully be integrated together to create VSM microprocessor that is a very simple microprocessor. For my final project I attempted to create a successfully working Counter16 component that uses a And gate, 4 D Flip Flops, and Inverter gates. Given a ElectricVLSI template with all of the components needed to create the Counter16 I thought creating the Counter16 would be easier to implement than it actually turned out to be while trying to implement the Counter16. This implementation gave me an idea and realized how difficult it is to actually create even single components and it takes a lot of time effort and patience to implement VLSI projects.
+The Final project was the idea of the creating a simple VSM microprocessor and every student in the class picked a different component that would hopefully be integrated together to create VSM microprocessor that is a very simple microprocessor. For my final project I attempted to create a successfully working Counter16 component that uses a And gate, 4 D Flip Flops, and Inverter gates. Given a ElectricVLSI template with all of the components needed to create the Counter16 I thought creating the Counter16 would be easier to implement than it actually turned out to be while trying to implement the Counter16. This implementation gave me an idea and realized how difficult it is to actually create even single components and it takes a lot of time effort and patience to implement VLSI projects.
 ## Schematics <a name="Schematics"></a>
    1. This section shows the Schematics of the And gate, Inverter gate, D Flip Flop, and Counter16. I used the mudlib ElectricVLSI template that had the And gate, Inverter gate, and D Flip Flop. The specific group of components I used are and2_1x, flopr_c_1x, and inv_1x. The Counter16 utilizes all these different components from the template and integrates them together to make the Counter16 described in much detail below. 
 ## And gate <a name="And gate"></a>
@@ -59,34 +59,84 @@ Figure 3: Schematic of D Flip Flop
 ## Counter16 <a name="Counter16"></a>
    1. The schematic of the Counter16 was created from icons of one And gate, four D Flip Flops, and five inverter gates. Initially the And gate with inputs Ena and clk are connected to a inverter gate with a wire C1 which would be the ph1 which is just the clock and the output C2 which is the inverse of the clock ph1 which is what ph2 would be. Then, for every flip flop there would be a inverter where the output of the inverter would feed into the input d and connected to the ph1 of the next flip flop and the input of the inverter would be the output q and connected to ph2 of the next flip flop. Figure 4 below shows the schematic of the Counter16.
       
-<img width="837" alt="counter_16" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/04f06673-ea30-4b6f-aab2-b3933b09a6b2">
+<img width="837" alt="counter_16" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/a3c2ee25-967f-4255-b463-45a0e29cf2f6">
+
 
 
 Figure 4: Schematic of Counter16
 ## Layout <a name="Layout"></a>
-   1. 
+   1.  This section contains the Layouts of the And gate, Inverter gate, D Flip Flop, and Counter16. The difficulties with the layout is figuring out how each of the individual components like the And gate, Inverter gate, and D Flip Flop work to be able to combine them together to make the Counter16. There were many iterations done to the layout especially the Counter16 because there were many errors like the wiring was not done correctly, missing exports, not very organized, and more. The layout of the Counter16 was the biggest and most complex layout I have done so far.
 ## And gate <a name="And gate"></a>
-   1. 
+   1. Figure 5 below shows the layout of the And gate which is used in the Counter16. The And gate is used in the Counter16 to feed two inputs which are the clk and Ena which are related to the two clocks. This And gate below is used from the mudlib template for the component and2_1x and was already created for me to use.
+      
+      <img width="431" alt="And_gate" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/edd1d38f-4364-495d-9072-9aa0787d6f37">
+
+      Figure 5: Layout of And Gate
+
 ## Inverter <a name="Inverter"></a>
-   1. 
+   1. Figure 6 below shows the layout of the Inverter gate which is used in the Counter16. The inverter is used to connect to the four D Flip Flops and another way the Inverter gate is used is to invert the clock input compared to the other clock. This Inverter gate below is used from the mudlib template for the component inv_1x and was created to make the Counter16 easier to create to a certain point.
+      
+      <img width="502" alt="Inverter_gate" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d833282c-ec5b-497d-9cae-3c2d97ad5cd2">
+
+      Figure 6: Layout of Inverter Gate
+
 ## D Flip Flop <a name="D Flip Flop"></a>
+   1.  Figure 7 below shows the layout of the D Flip Flop which is used in the Counter16. There are four D Flip Flop used in the Counter16. The four D Flip Flop used in the Counter16 make the Counter16 able to count up or down based on the pulses of the clocks. The four D Flip Flops are used from the mudlib template for the component flopr_c_1x and provided to make the Counter16 able to be created because if the D Flip Flop needed to be created from scratch it would of definitely been harder to implement the Counter16 in the given limited time.
+
+<img width="781" alt="D Flip Flop" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/46631c89-a792-49e9-acd5-942823e22f97">
+
+   Figure 7: Layout of D Flip Flop
+
 ## Counter16 <a name="Counter16"></a>
-   1.
+   1. Figure 8 below shows the layout of the Counter16. The Counter16 was created by using four D Flip Flops, five Inverter gates, one And gate from the mudlib template provided with the layouts and schematics so I could just drag in the layouts of the different components needed to create the Counter16 and then wire all the components based on the schematic I created for the Counter16. This layout was the most difficult because if I needed to make changes to the schematic which I did then the layout would need to be redone from the very beginning. I made various edits to the schematic and layout about three or four times so the layout of Counter16 was done through various iterations.
+
+      <img width="814" alt="Counter_16" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/19f22888-92d7-43d5-93ad-0d5726228412">
+
+      Figure 8: Layout of Counter16
 ## Simulations <a name="Simulations"></a>
-   1. This section shows the Simulations of the 3-Charge Pump, Ring Oscillator, and Regulator. The simulations are only from the schematic for the 3-charge pump, ring oscillator, and the        regulator but there is no simulation for the DC-to-DC Converter due to lack of time and focusing more on the final project. The layout simulations did not work so I was kind of 
-      frustrated because there were so many errors and I was overwhelmed but I was not able to figure out why the simulations for the layouts were not working.
+   1. In the simulation section, I encountered challenges while simulating various digital circuits, including the And gate, Inverter gate, D Flip Flop, and Counter16. To validate the accuracy of the D Flip Flop simulation, I performed a comparative analysis using Falstad.
+During the simulations, I faced difficulties, particularly with the D Flip Flop and Counter16. In the case of the D Flip Flop, comparing the simulation results with Falstad was crucial to ensure the accuracy of the simulation. For the Counter16 simulation, overcoming obstacles proved to be more challenging. One notable issue was the absence of the "cmosedu_models.txt" file. I successfully resolved this issue by configuring the Spice models to P_1u or N_1u depending on the transistor type.
 ## And gate <a name="And gate"></a>
-   1.
+   1. Figure 9 below shows the truth table characteristics of the And gate and Figure 10 below shows the switching voltage point of the And gate. As you can see from the truth table characteristics of the And gate I can see that the input of a rises from 0 volts to 5 volts but the input of b and output y are offsetted graphs of the waveform of a. From the voltage switching point waveform you can see that the output waveform kind of levels off and eventually stops at the vdd which is 5 volts.
+
+   <img width="1272" alt="And_simulation" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/42604efe-13f3-4c0b-8016-d01e08be8083">
+
+   Figure 9: And Gate Truth Table characteristics Waveforms
+
+   <img width="1274" alt="And_switching point" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/89bb33e9-1a45-4705-bbef-1eb613856f68">
+
+   Figure 10: And Gate Voltage Switching Point Waveforms
 ## Inverter <a name="Inverter"></a>
-   1. 
+   1. Figure 11 below shows the switching voltage point of the Inverter gate and the switching point of the Inverter gate was determined using resources from the slides and previous lab assignments when I got stuck or could not remember. The Inverter switching point was used to identify the characteristics of the Inverter gate especially since the component inv_1x was created and needed to verify if the Inverter was functioning the way it is suppose to and pick a different component from the mudlib template if necessry.
+
+      <img width="1274" alt="Inverter_sim" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/5c7edda0-8e26-4c29-b318-763e83818dc6">
+
+      Figure 11: Inverter Voltage Switching point
+
 ## D Flip Flop <a name="D Flip Flop"></a>
-   1. 
+   1. Figure 12 below shows the simulation of D Flip Flop with the input d, output q, clock, and the reset even though the reset was not shown because I just saw a straight line at 5 volts and I thought the reset was not working so I did not include it. The hardest part of the D Flip Flop was figuring out the spice code especially to display the clock correctly. Also, a bit of research on how the D Flip Flop needed to work was necessary. Figure 13 below shows a truth table of the D Flip Flop that I used to kind of understand the behavior of the D Flip Flop from the internet.
+
+      <img width="1273" alt="Flip Flop_truthtables" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/e426db88-a628-46fd-a852-78eaf2f56c86">
+
+      Figure 12: Simulation of D Flip Flop
+
+      ![Truth Table](https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/7b312048-3ae9-45ed-9eb8-c6a7033c533b)
+
+      Figure 13: D Flip Flop Truth Table
 ## Counter16 <a name="Counter16"></a>
-   1. 
+   1. Figure 14 below shows the simulation of the Counter16 for the schematic and Figure 15 below shows the simulation of the Counter16 for the layout and when I simulated both the schematic and layout I saw that they looked exactly the same and the simulations matched each other. There were a lot of difficulties getting the simulations to work like from simple errors like the text file not reading to like complex issues that involved rewiring the schematic and layout multiple times to make it more efficient, clean, and functional.
+
+      <img width="1263" alt="Counter_16_sim" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/41a4caab-32f0-4fed-8a0c-6da8be337dc8">
+
+      Figure 14: Simulation of Counter16 in Schematic
+
+      <img width="1269" alt="Counter_16_layout" src="https://github.com/Kkihamin/ENCE_3501_Projects/assets/129350322/d7e288bf-8579-4d32-bef9-b65e6db5e01a">
+
+      Figure 15: Simulation of Counter16 in Layout
 ## Challenges <a name="Challenges"></a>
-   1. 
+   1. There were various challenges in creating the Counter16 which were having to rewire the schematic and layout. For example, I had to completely rewire the schematic because the initial schematic I had wired was incorrect and it was not similar to the Logisim schematic provided in the Final project document. The second time I had to rewire because the Counter16 had errors simulationing because there were floating wires and I had to rewire the entire schematic to figure out the issue. Third time was to fix the simulation because it was not displaying the correct waveform and was fixed by adding an additional inverter to the output of the And gate. The last time wiring was to wire the schematic in a way that made the schematic look more organized and easier to read. The layout was done several times as well because I wired the layout of the components together in the most inefficient way initially so that when I was done wiring the wires were very long and all over the place and I was not able to wire the Vdd's and gnd's all together and got the error of floating voltages and grounds. So I restarted the layout from scratch wiring the vdd's and gnd's together before wiring everything else together and this time it did not create errors but it was definitely a time consuming process but I feel like it was totally worth it.
 ## Future Plans <a name="Future Plans"></a>
-   1.
+   1. My future plans is I might try to implement the other components in my free time just for fun and I feel like that would make me more familiar with ElectricVLSI and discover things that I may have never known about the software.
 
 
  
